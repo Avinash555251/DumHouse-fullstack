@@ -1,0 +1,246 @@
+/* =====================================================
+   CATEGORIES SECTION
+===================================================== */
+
+.categories {
+    width: 100%;
+    padding: 60px 8%;
+    background: #111;
+    color: #fff;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* =====================================================
+   HEADING
+===================================================== */
+
+.categories h2 {
+    margin: 0 0 40px;
+
+    text-align: center;
+
+    color: #ff6b00;
+
+    font-size: 36px;
+    line-height: 1.2;
+}
+
+/* =====================================================
+   CATEGORY CONTAINER
+===================================================== */
+
+.category-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+/* =====================================================
+   CATEGORY CARD
+===================================================== */
+
+.category-card {
+    width: 180px;
+    min-height: 120px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px;
+
+    background: #1d1d1d;
+
+    border-radius: 15px;
+
+    color: #fff;
+
+    font-size: 22px;
+    font-weight: 600;
+
+    text-align: center;
+
+    cursor: pointer;
+
+    box-sizing: border-box;
+
+    transition:
+        background 0.3s ease,
+        transform 0.25s ease,
+        box-shadow 0.3s ease;
+}
+
+.category-card:hover {
+    background: #ff6b00;
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(255, 107, 0, 0.25);
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .categories {
+        padding: 55px 5%;
+    }
+
+    .categories h2 {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .category-container {
+        gap: 18px;
+    }
+
+    .category-card {
+        width: 165px;
+        min-height: 110px;
+
+        font-size: 20px;
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .categories {
+        padding: 50px 15px;
+    }
+
+    .categories h2 {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    .category-container {
+        gap: 12px;
+    }
+
+    .category-card {
+        width: calc(50% - 6px);
+        min-height: 100px;
+
+        padding: 12px;
+
+        border-radius: 13px;
+
+        font-size: 17px;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE / FLIP PHONE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .categories {
+        padding: 45px 10px;
+    }
+
+    .categories h2 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    .category-container {
+        gap: 8px;
+    }
+
+    .category-card {
+        width: calc(50% - 4px);
+        min-height: 85px;
+
+        padding: 10px;
+
+        border-radius: 11px;
+
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   VERY NARROW / FOLD PHONE
+===================================================== */
+
+@media (max-width: 340px) {
+
+    .categories {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .categories h2 {
+        font-size: 22px;
+    }
+
+    .category-container {
+        gap: 6px;
+    }
+
+    .category-card {
+        width: calc(50% - 3px);
+        min-height: 75px;
+
+        font-size: 13px;
+
+        border-radius: 9px;
+    }
+}
+
+/* =====================================================
+   TRI-FOLD / VERY NARROW
+===================================================== */
+
+@media (max-width: 300px) {
+
+    .categories {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+
+    .categories h2 {
+        font-size: 20px;
+    }
+
+    .category-card {
+        min-height: 68px;
+
+        padding: 8px;
+
+        font-size: 12px;
+    }
+}
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none) {
+
+    .category-card:hover {
+        transform: none;
+
+        box-shadow: none;
+
+        background: #1d1d1d;
+    }
+}

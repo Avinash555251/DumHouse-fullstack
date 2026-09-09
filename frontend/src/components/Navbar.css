@@ -1,0 +1,807 @@
+/* =====================================================
+   DUM HOUSE NAVBAR
+===================================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    padding: 0 28px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+
+    align-items: center;
+
+    background: #111;
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* =====================================================
+   LOGO
+===================================================== */
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    justify-self: start;
+
+    min-width: 0;
+
+    cursor: pointer;
+}
+
+.logo-image {
+    width: 46px;
+    height: 46px;
+
+    flex: 0 0 46px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-image img {
+    width: 46px;
+    height: 46px;
+
+    object-fit: contain;
+}
+
+.logo-content {
+    min-width: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    line-height: 1;
+}
+
+.logo-content h2 {
+    margin: 0;
+
+    color: #ff6b00;
+
+    font-size: 25px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.logo-content span {
+    margin-top: 5px;
+
+    color: #aaa;
+
+    font-size: 10px;
+
+    white-space: nowrap;
+}
+
+/* =====================================================
+   HOME + MENU
+===================================================== */
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 32px;
+
+    justify-self: center;
+
+    white-space: nowrap;
+}
+
+.nav-link {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 8px 4px;
+
+    color: #fff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    transition: 0.25s ease;
+}
+
+.nav-link::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: #ff6b00;
+
+    transition: 0.25s ease;
+}
+
+.nav-link:hover {
+    color: #ff6b00;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link svg {
+    transition: 0.25s ease;
+}
+
+.nav-link:hover svg {
+    color: #ff6b00;
+}
+
+/* =====================================================
+   RIGHT SIDE
+===================================================== */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    justify-self: end;
+
+    min-width: 0;
+}
+
+/* =====================================================
+   CART
+===================================================== */
+
+.cart-btn {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    background: #ff6b00;
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.25s ease;
+}
+
+.cart-btn:hover {
+    background: #e85d04;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(255, 107, 0, 0.25);
+}
+
+/* =====================================================
+   CART COUNT
+===================================================== */
+
+.cart-count {
+    position: absolute;
+
+    top: -7px;
+    right: -7px;
+
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #ef233c;
+
+    color: #fff;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    border: 2px solid #111;
+
+    z-index: 10;
+}
+
+/* =====================================================
+   PROFILE
+===================================================== */
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    min-width: 0;
+
+    padding: 10px 15px;
+
+    background: #ff6b00;
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.25s ease;
+}
+
+.profile-btn:hover {
+    background: #e85d04;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(255, 107, 0, 0.25);
+}
+
+.profile-btn span {
+    max-width: 120px;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+/* =====================================================
+   LOGIN
+===================================================== */
+
+.login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 10px 18px;
+
+    background: #ff6b00;
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.25s ease;
+}
+
+.login-btn:hover {
+    background: #e85d04;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 5px 15px rgba(255, 107, 0, 0.25);
+}
+
+/* =====================================================
+   LOGOUT
+===================================================== */
+
+.logout-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #fff;
+
+    padding: 10px 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    border-radius: 25px;
+
+    transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+    background: #2a2a2a;
+
+    color: #ff6b00;
+}
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .navbar {
+        height: 74px;
+
+        padding: 0 18px;
+    }
+
+    .logo-content h2 {
+        font-size: 21px;
+    }
+
+    .logo-content span {
+        font-size: 9px;
+    }
+
+    .logo-image,
+    .logo-image img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-image {
+        flex-basis: 40px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .cart-btn,
+    .profile-btn,
+    .login-btn {
+        padding: 9px 12px;
+
+        font-size: 13px;
+    }
+
+    .profile-btn span {
+        max-width: 90px;
+    }
+}
+
+/* =====================================================
+   SMALL TABLET / LARGE PHONE
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        grid-template-columns: auto 1fr auto;
+
+        padding: 0 14px;
+    }
+
+    .logo-content span {
+        display: none;
+    }
+
+    .logo-content h2 {
+        font-size: 18px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-link {
+        padding: 7px;
+    }
+
+    .cart-btn,
+    .profile-btn,
+    .login-btn {
+        padding: 8px 10px;
+    }
+}
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        height: 68px;
+
+        padding: 0 10px;
+
+        gap: 6px;
+    }
+
+    /* Logo */
+
+    .logo-image,
+    .logo-image img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .logo-image {
+        flex-basis: 36px;
+    }
+
+    .logo-content {
+        display: none;
+    }
+
+    /* Center */
+
+    .nav-links {
+        gap: 5px;
+    }
+
+    .nav-link {
+        padding: 9px;
+
+        gap: 0;
+    }
+
+    .nav-link span {
+        display: none;
+    }
+
+    /* Right */
+
+    .nav-right {
+        gap: 5px;
+    }
+
+    .cart-btn,
+    .profile-btn {
+        width: 38px;
+        height: 38px;
+
+        padding: 0;
+
+        border-radius: 10px;
+    }
+
+    .cart-btn span:not(.cart-count),
+    .profile-btn span {
+        display: none;
+    }
+
+    .login-btn {
+        height: 38px;
+
+        padding: 0 12px;
+
+        border-radius: 10px;
+
+        font-size: 12px;
+    }
+
+    .cart-count {
+        display: flex !important;
+
+        width: 18px;
+        height: 18px;
+
+        top: -5px;
+        right: -5px;
+
+        font-size: 9px;
+    }
+}
+
+/* =====================================================
+   SMALL MOBILE / FLIP PHONE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .navbar {
+        height: 64px;
+
+        padding: 0 7px;
+
+        gap: 3px;
+    }
+
+    .logo-image,
+    .logo-image img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-image {
+        flex-basis: 32px;
+    }
+
+    .nav-links {
+        gap: 1px;
+    }
+
+    .nav-link {
+        padding: 7px;
+    }
+
+    .nav-right {
+        gap: 3px;
+    }
+
+    .cart-btn,
+    .profile-btn {
+        width: 34px;
+        height: 34px;
+
+        border-radius: 8px;
+    }
+
+    .login-btn {
+        height: 34px;
+
+        padding: 0 8px;
+
+        font-size: 11px;
+
+        border-radius: 8px;
+    }
+
+    .cart-count {
+        width: 17px;
+        height: 17px;
+
+        font-size: 8px;
+    }
+}
+
+/* =====================================================
+   VERY NARROW / FOLD PHONE
+===================================================== */
+
+@media (max-width: 340px) {
+
+    .navbar {
+        height: 60px;
+
+        padding: 0 5px;
+    }
+
+    .logo-image,
+    .logo-image img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logo-image {
+        flex-basis: 28px;
+    }
+
+    .nav-links {
+        gap: 0;
+    }
+
+    .nav-link {
+        padding: 6px;
+    }
+
+    .nav-link svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .cart-btn,
+    .profile-btn {
+        width: 30px;
+        height: 30px;
+    }
+
+    .login-btn {
+        height: 30px;
+
+        padding: 0 6px;
+
+        font-size: 10px;
+    }
+
+    .cart-count {
+        width: 15px;
+        height: 15px;
+
+        top: -4px;
+        right: -4px;
+
+        font-size: 7px;
+    }
+}
+
+/* =====================================================
+   VERY NARROW TRI-FOLD
+===================================================== */
+
+@media (max-width: 300px) {
+
+    .navbar {
+        height: 56px;
+
+        padding: 0 4px;
+
+        gap: 2px;
+    }
+
+    .logo-image,
+    .logo-image img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .logo-image {
+        flex-basis: 25px;
+    }
+
+    .nav-link {
+        padding: 5px;
+    }
+
+    .nav-link svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .cart-btn,
+    .profile-btn {
+        width: 27px;
+        height: 27px;
+
+        border-radius: 7px;
+    }
+
+    .login-btn {
+        height: 27px;
+
+        padding: 0 5px;
+
+        font-size: 9px;
+
+        border-radius: 7px;
+    }
+
+    .cart-count {
+        width: 14px;
+        height: 14px;
+
+        font-size: 7px;
+    }
+}
+
+/* =====================================================
+   LANDSCAPE MOBILE / FOLD
+===================================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+
+    .navbar {
+        height: 58px;
+
+        padding: 0 12px;
+    }
+
+    .logo-image,
+    .logo-image img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .logo-image {
+        flex-basis: 32px;
+    }
+
+    .logo-content {
+        display: none;
+    }
+
+    .nav-link {
+        padding: 6px;
+    }
+
+    .cart-btn,
+    .profile-btn,
+    .login-btn {
+        height: 32px;
+    }
+}
+
+/* =====================================================
+   LARGE DESKTOP
+===================================================== */
+
+@media (min-width: 1400px) {
+
+    .navbar {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+    .nav-links {
+        gap: 38px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .cart-btn,
+    .profile-btn,
+    .login-btn {
+        padding: 11px 17px;
+
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   TOUCH DEVICES
+===================================================== */
+
+@media (hover: none) {
+
+    .nav-link:hover {
+        color: #fff;
+    }
+
+    .nav-link:hover::after {
+        width: 0;
+    }
+
+    .cart-btn:hover,
+    .profile-btn:hover,
+    .login-btn:hover {
+        transform: none;
+
+        box-shadow: none;
+    }
+}

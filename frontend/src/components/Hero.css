@@ -1,0 +1,527 @@
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+  width: 100%;
+  height: calc(100vh - 78px);
+  min-height: 650px;
+
+  position: relative;
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+
+  background-image: url("/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+/* =====================================================
+   DARK OVERLAY
+===================================================== */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.72) 25%,
+      rgba(0, 0, 0, 0.45) 48%,
+      rgba(0, 0, 0, 0.15) 75%,
+      rgba(0, 0, 0, 0.05) 100%
+    );
+}
+
+
+/* =====================================================
+   HERO CONTENT
+===================================================== */
+
+.hero-content {
+  position: absolute;
+
+  z-index: 5;
+
+  left: 5%;
+  right: auto;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 570px;
+  max-width: 570px;
+
+  color: #ffffff;
+
+  text-align: left;
+}
+
+
+/* =====================================================
+   MAIN HEADING
+===================================================== */
+
+.hero-title {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  color: #ffffff;
+
+  font-family:
+    "Anton",
+    Impact,
+    "Arial Narrow",
+    sans-serif;
+
+  font-size: 68px;
+
+  font-weight: 400;
+
+  line-height: 1.02;
+
+  letter-spacing: 1px;
+
+  text-align: left;
+
+  text-transform: uppercase;
+
+  text-shadow:
+    3px 4px 8px rgba(0, 0, 0, 0.85);
+}
+
+
+/* First line */
+
+.hero-main-title {
+  display: block;
+
+  white-space: nowrap;
+}
+
+
+/* HOT */
+
+.hero-hot {
+  display: block;
+
+  color: #ff5a00;
+
+  font-family:
+    "Anton",
+    Impact,
+    "Arial Narrow",
+    sans-serif;
+
+  font-size: 68px;
+
+  font-weight: 400;
+
+  line-height: 1;
+
+  margin-top: 2px;
+}
+
+
+/* =====================================================
+   DECORATIVE LINE
+===================================================== */
+
+.hero-line {
+  width: 570px;
+
+  height: 20px;
+
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+}
+
+
+/* LEFT LINE */
+
+.line-left {
+  height: 2px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      #ff6500
+    );
+}
+
+
+/* RIGHT LINE */
+
+.line-right {
+  height: 2px;
+
+  flex: 1;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff6500,
+      transparent
+    );
+}
+
+
+/* CENTER SYMBOL */
+
+.hero-line b {
+  flex: 0 0 auto;
+
+  color: #ff6500;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  display: inline-block;
+
+  transform: rotate(45deg);
+}
+
+
+/* =====================================================
+   CATEGORY ITEMS
+===================================================== */
+
+.hero-categories {
+  width: 570px;
+
+  margin: 0 0 34px;
+  padding: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  white-space: nowrap;
+
+  color: #f3e8dd;
+
+  font-family:
+    "Oswald",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
+
+  font-size: 21px;
+
+  font-weight: 400;
+
+  line-height: 1.5;
+
+  text-align: left;
+
+  text-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.85);
+}
+
+
+/* ITEMS */
+
+.hero-categories span {
+  display: inline-block;
+}
+
+
+/* ORANGE DOTS */
+
+.hero-categories strong {
+  display: inline-block;
+
+  color: #ff5a00;
+
+  margin-left: 10px;
+  margin-right: 10px;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.hero-buttons {
+  width: 570px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  gap: 35px;
+}
+
+
+/* =====================================================
+   EXPLORE MENU
+===================================================== */
+
+.explore-btn {
+  width: 300px;
+  height: 76px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f4510b;
+
+  color: #ffffff;
+
+  border: 2px solid #f4510b;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-family:
+    "Oswald",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+
+.explore-btn:hover {
+  background: #ff6417;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 25px rgba(255, 90, 0, 0.35);
+}
+
+
+/* =====================================================
+   ORDER NOW
+===================================================== */
+
+.order-btn {
+  width: 270px;
+  height: 76px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(0, 0, 0, 0.12);
+
+  color: #ffffff;
+
+  border: 2px solid #ff6500;
+
+  border-radius: 40px;
+
+  text-decoration: none;
+
+  font-family:
+    "Oswald",
+    "Arial Narrow",
+    Arial,
+    sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.5px;
+
+  box-sizing: border-box;
+
+  transition: 0.3s ease;
+}
+
+
+.order-btn:hover {
+  background: rgba(255, 101, 0, 0.18);
+
+  transform: translateY(-3px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+  .hero-content {
+    left: 5%;
+
+    width: 600px;
+    max-width: 600px;
+  }
+
+  .hero-title {
+    font-size: 58px;
+  }
+
+  .hero-hot {
+    font-size: 58px;
+  }
+
+  .hero-line,
+  .hero-categories,
+  .hero-buttons {
+    width: 520px;
+  }
+
+  .hero-categories {
+    font-size: 18px;
+  }
+
+  .explore-btn {
+    width: 240px;
+    height: 65px;
+  }
+
+  .order-btn {
+    width: 220px;
+    height: 65px;
+  }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 700px) {
+
+  .hero {
+    height: 680px;
+    min-height: 680px;
+
+    background-position: 65% center;
+  }
+
+  .overlay {
+    background:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.86),
+        rgba(0, 0, 0, 0.65),
+        rgba(0, 0, 0, 0.30)
+      );
+  }
+
+  .hero-content {
+    left: 22px;
+    right: 22px;
+
+    top: 50%;
+
+    width: auto;
+    max-width: none;
+
+    transform: translateY(-50%);
+  }
+
+  .hero-title {
+    font-size: 42px;
+
+    line-height: 1.05;
+  }
+
+  .hero-main-title {
+    white-space: normal;
+  }
+
+  .hero-hot {
+    font-size: 42px;
+  }
+
+  .hero-line {
+    width: 100%;
+
+    margin-top: 20px;
+    margin-bottom: 18px;
+  }
+
+  .hero-categories {
+    width: 100%;
+
+    white-space: normal;
+
+    flex-wrap: wrap;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+  }
+
+  .hero-categories strong {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .hero-buttons {
+    width: 100%;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 12px;
+  }
+
+  .explore-btn,
+  .order-btn {
+    width: 100%;
+
+    height: 58px;
+
+    font-size: 18px;
+  }
+}   
