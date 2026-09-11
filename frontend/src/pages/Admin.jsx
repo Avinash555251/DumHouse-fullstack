@@ -58,13 +58,13 @@ const ordersPerPage = 10;
     const token = localStorage.getItem("dumHouseToken");
 
     const response = await fetch(
-      "http://localhost:5000/api/orders",
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    );
+  "/api/orders",
+  {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  }
+);
 
     const data = await response.json();
 
@@ -135,20 +135,20 @@ const ordersPerPage = 10;
     const token = localStorage.getItem("dumHouseToken");
 
     const response = await fetch(
-      `http://localhost:5000/api/orders/${orderId}/status`,
-      {
-        method: "PUT",
+  `/api/orders/${orderId}/status`,
+  {
+    method: "PUT",
 
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`,
-        },
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: `Bearer ${token}`,
+    },
 
-        body: JSON.stringify({
-          status,
-        }),
-      }
-    );
+    body: JSON.stringify({
+      status,
+    }),
+  }
+);
 
     const data = await response.json();
 

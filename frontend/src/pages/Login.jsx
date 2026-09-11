@@ -3,10 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./Login.css";
 
 
-const API_BASE_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : `http://${window.location.hostname}:5000`;
+const API_BASE_URL = "";
 
 /* =====================================================
    MSG91 WIDGET LOADER
@@ -289,10 +286,7 @@ function Login({ onLogin }) {
        BACKEND URL
     ===================================================== */
 
-    const API_URL =
-  window.location.hostname === "localhost"
-    ? "http://localhost:5000"
-    : `http://${window.location.hostname}:5000`;
+    const API_URL = "";
 
 
     /* =====================================================

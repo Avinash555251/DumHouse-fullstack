@@ -40,8 +40,7 @@ useEffect(() => {
     async function fetchFoods() {
         try {
             const response = await fetch(
-  `${window.location.protocol}//${window.location.hostname}:5000/api/foods`
-)
+`/api/foods`)
 
             const data = await response.json();
 

@@ -76,8 +76,7 @@ useEffect(() => {
       }
 
       const response = await fetch(
-`${window.location.protocol}//${window.location.hostname}:5000/api/orders/customer/${user.phone}`,
-        {
+`/api/orders/customer/${user.phone}`,        {
           headers: {
             Authorization: `Bearer ${token}`,
           },
