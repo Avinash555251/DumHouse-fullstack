@@ -253,3 +253,576 @@
     height: 48px;
   }
 }
+/* =====================================================
+   ADMIN LOGIN — DUM HOUSE PREMIUM THEME
+   Midnight Blue + White + Red
+===================================================== */
+
+.admin-login-page {
+    min-height: 100vh !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 110px 32px 50px !important;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(239, 68, 68, 0.08),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(17, 24, 39, 0.08),
+            transparent 32%
+        ),
+        #F3F4F6 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ================= ADMIN CARD ================= */
+
+.admin-login-container {
+    position: relative !important;
+    overflow: hidden !important;
+
+    width: 100% !important;
+    max-width: 440px !important;
+
+    padding: 38px 38px 32px !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-radius: 20px !important;
+
+    border-top: 4px solid #EF4444 !important;
+
+    box-shadow:
+        0 18px 45px rgba(17, 24, 39, 0.12),
+        0 5px 16px rgba(239, 68, 68, 0.05) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ================= ADMIN ICON ================= */
+
+.admin-login-icon {
+    width: 64px !important;
+    height: 64px !important;
+
+    margin: 0 auto 15px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #FFF1F2 !important;
+
+    color: #111827 !important;
+
+    border: 2px solid #EF4444 !important;
+    border-radius: 16px !important;
+}
+
+.admin-login-icon svg {
+    width: 30px !important;
+    height: 30px !important;
+
+    color: #111827 !important;
+    stroke: #111827 !important;
+}
+
+
+/* ================= HEADING ================= */
+
+.admin-login-container h1 {
+    color: #111827 !important;
+
+    font-size: 28px !important;
+    font-weight: 800 !important;
+
+    text-align: center !important;
+}
+
+.admin-login-container > p {
+    color: #6B7280 !important;
+
+    text-align: center !important;
+}
+
+
+/* ================= LABEL ================= */
+
+.admin-login-container label {
+    color: #374151 !important;
+
+    font-size: 13px !important;
+    font-weight: 750 !important;
+}
+
+
+/* ================= INPUT ================= */
+
+.admin-login-container input {
+    background: #F9FAFB !important;
+
+    color: #111827 !important;
+
+    border: 1px solid #D1D5DB !important;
+
+    border-radius: 11px !important;
+}
+
+.admin-login-container input:hover {
+    background: #FFFFFF !important;
+
+    border-color: #9CA3AF !important;
+}
+
+.admin-login-container input:focus {
+    background: #FFFFFF !important;
+
+    border-color: #EF4444 !important;
+
+    outline: none !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.10) !important;
+}
+
+.admin-login-container input::placeholder {
+    color: #9CA3AF !important;
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.admin-login-container button[type="submit"] {
+    width: 100% !important;
+
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+
+    border: 1px solid #EF4444 !important;
+
+    border-radius: 11px !important;
+
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 7px 18px rgba(239, 68, 68, 0.18) !important;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+.admin-login-container button[type="submit"]:hover {
+    background: #F87171 !important;
+
+    transform: translateY(-1px) !important;
+
+    box-shadow:
+        0 9px 22px rgba(239, 68, 68, 0.24) !important;
+}
+
+.admin-login-container button[type="submit"]:disabled {
+    opacity: 0.65 !important;
+    transform: none !important;
+}
+
+
+/* ================= ERROR ================= */
+
+.admin-login-error {
+    background: #FFF1F2 !important;
+
+    color: #B91C1C !important;
+
+    border: 1px solid #FECACA !important;
+    border-left: 4px solid #EF4444 !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+    .admin-login-page {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .admin-login-container {
+        padding: 32px 25px 28px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .admin-login-page {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .admin-login-container {
+        padding: 29px 20px 25px !important;
+        border-radius: 17px !important;
+    }
+
+    .admin-login-icon {
+        width: 58px !important;
+        height: 58px !important;
+    }
+}
+/* =====================================================
+   ADMIN LOGIN — DUM HOUSE THEME
+   Midnight Blue + White + Red
+===================================================== */
+
+.admin-login-page {
+    min-height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 32px !important;
+    box-sizing: border-box !important;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(239, 68, 68, 0.08),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(17, 24, 39, 0.08),
+            transparent 32%
+        ),
+        #F3F4F6 !important;
+}
+
+
+/* ================= CARD ================= */
+
+.admin-login-card {
+    width: 100% !important;
+    max-width: 430px !important;
+
+    padding: 38px 36px 30px !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-top: 4px solid #EF4444 !important;
+    border-radius: 18px !important;
+
+    box-shadow:
+        0 18px 45px rgba(17, 24, 39, 0.12),
+        0 5px 16px rgba(239, 68, 68, 0.05) !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* ================= HEADER ================= */
+
+.admin-login-header {
+    text-align: center !important;
+    margin-bottom: 28px !important;
+}
+
+.admin-login-logo {
+    width: 64px !important;
+    height: 64px !important;
+
+    margin: 0 auto 15px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #FFF1F2 !important;
+    color: #111827 !important;
+
+    border: 2px solid #EF4444 !important;
+    border-radius: 16px !important;
+
+    font-size: 25px !important;
+    font-weight: 800 !important;
+}
+
+.admin-login-header h1 {
+    margin: 0 !important;
+
+    color: #111827 !important;
+
+    font-size: 28px !important;
+    font-weight: 800 !important;
+}
+
+.admin-login-header p {
+    margin: 7px 0 0 !important;
+
+    color: #6B7280 !important;
+
+    font-size: 14px !important;
+}
+
+
+/* ================= FORM ================= */
+
+.admin-login-field {
+    margin-bottom: 17px !important;
+}
+
+.admin-login-field label {
+    display: block !important;
+
+    margin-bottom: 6px !important;
+
+    color: #374151 !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+
+/* ================= INPUT ================= */
+
+.admin-login-input {
+    width: 100% !important;
+    height: 50px !important;
+
+    padding: 0 14px !important;
+
+    background: #F9FAFB !important;
+    color: #111827 !important;
+
+    border: 1px solid #D1D5DB !important;
+    border-radius: 11px !important;
+
+    font-size: 15px !important;
+
+    box-sizing: border-box !important;
+
+    outline: none !important;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+.admin-login-input:hover {
+    background: #FFFFFF !important;
+    border-color: #9CA3AF !important;
+}
+
+.admin-login-input:focus {
+    background: #FFFFFF !important;
+
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.10) !important;
+}
+
+.admin-login-input::placeholder {
+    color: #9CA3AF !important;
+}
+
+
+/* ================= PASSWORD EYE ================= */
+
+.admin-password-toggle {
+    color: #6B7280 !important;
+}
+
+.admin-password-toggle:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+}
+
+
+/* ================= ERROR ================= */
+
+.admin-login-error {
+    margin-bottom: 17px !important;
+
+    background: #FFF1F2 !important;
+    color: #B91C1C !important;
+
+    border: 1px solid #FECACA !important;
+    border-left: 4px solid #EF4444 !important;
+
+    border-radius: 10px !important;
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.admin-login-button {
+    width: 100% !important;
+    height: 50px !important;
+
+    margin-top: 3px !important;
+
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+
+    border: 1px solid #EF4444 !important;
+    border-radius: 11px !important;
+
+    font-size: 15px !important;
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 7px 18px rgba(239, 68, 68, 0.18) !important;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease !important;
+}
+
+.admin-login-button:hover {
+    background: #F87171 !important;
+
+    box-shadow:
+        0 9px 22px rgba(239, 68, 68, 0.24) !important;
+
+    transform: translateY(-1px) !important;
+}
+
+.admin-login-button:active {
+    background: #EF4444 !important;
+    transform: translateY(0) !important;
+}
+
+.admin-login-button:disabled {
+    background: #EF4444 !important;
+    opacity: 0.65 !important;
+}
+
+
+/* ================= FOOTER ================= */
+
+.admin-login-footer {
+    margin-top: 20px !important;
+
+    color: #9CA3AF !important;
+
+    text-align: center !important;
+    font-size: 12px !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 600px) {
+
+    .admin-login-page {
+        padding: 20px 16px !important;
+    }
+
+    .admin-login-card {
+        padding: 30px 22px 25px !important;
+        border-radius: 16px !important;
+    }
+
+    .admin-login-header h1 {
+        font-size: 24px !important;
+    }
+
+    .admin-login-logo {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 22px !important;
+    }
+
+    .admin-login-input,
+    .admin-login-button {
+        height: 48px !important;
+    }
+}
+/* ================= PASSWORD EYE ================= */
+
+.admin-password-toggle {
+    position: absolute !important;
+    top: 50% !important;
+    right: 9px !important;
+
+    width: 38px !important;
+    height: 38px !important;
+
+    transform: translateY(-50%) !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 0 !important;
+
+    background: #FFFFFF !important;
+    color: #6B7280 !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-radius: 9px !important;
+
+    cursor: pointer !important;
+
+    font-size: 16px !important;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+.admin-password-toggle:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #FECACA !important;
+}
+
+.admin-password-toggle:active {
+    transform: translateY(-50%) scale(0.95) !important;
+}
+
+.admin-password-toggle:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.08) !important;
+}
+.admin-password-toggle {
+    color: #111827 !important;
+    background: #FFFFFF !important;
+    border: 1px solid #D1D5DB !important;
+}
+
+.admin-password-toggle svg {
+    width: 19px !important;
+    height: 19px !important;
+    color: #111827 !important;
+    stroke: #111827 !important;
+    stroke-width: 2.5 !important;
+}
+
+.admin-password-toggle:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+
+.admin-password-toggle:hover svg {
+    color: #EF4444 !important;
+    stroke: #EF4444 !important;
+}

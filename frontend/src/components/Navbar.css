@@ -1176,3 +1176,71 @@ top: -9px !important;
     border-radius: 50% !important;
     font: bold;
 }
+/* =====================================================
+   NAVBAR — LOGIN ACTIVE STATE
+===================================================== */
+
+.navbar a.active,
+.navbar a.active:hover,
+.navbar button.active,
+.navbar button.active:hover {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
+/* Login link active state */
+.navbar .login-link.active,
+.navbar .nav-login.active {
+    background: transparent !important;
+    color: #FFFFFF !important;
+}
+
+/* If active item uses red underline */
+.navbar a.active::after,
+.navbar button.active::after {
+    background: #EF4444 !important;
+}
+/* =====================================================
+   LOGIN BUTTON — FINAL THEME
+===================================================== */
+
+.navbar .login-btn,
+.navbar .login-btn:visited,
+.navbar .login-btn:focus,
+.navbar .login-btn:active {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #EF4444 !important;
+}
+
+.navbar .login-btn:hover {
+    background: #F87171 !important;
+    color: #FFFFFF !important;
+    border-color: #F87171 !important;
+}
+/* =====================================================
+   LOGIN BUTTON — KEEP RED ON HOVER / ACTIVE
+===================================================== */
+
+.navbar .login-btn,
+.navbar .login-btn:visited,
+.navbar .login-btn:focus,
+.navbar .login-btn:active,
+.navbar .login-btn:hover {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #EF4444 !important;
+}
+/* =====================================================
+   CART BUTTON — KEEP RED ON HOVER / ACTIVE
+===================================================== */
+
+.navbar .cart-btn,
+.navbar .cart-btn:visited,
+.navbar .cart-btn:focus,
+.navbar .cart-btn:active,
+.navbar .cart-btn:hover {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #EF4444 !important;
+}

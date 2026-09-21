@@ -12,7 +12,18 @@ import {
 function Profile({ orders, customer, onLogout }) {
 
   const navigate = useNavigate();
+  const profileCustomer = (() => {
+    if (customer?.name || customer?.phone) {
+      return customer;
+    }
 
+    try {
+      const savedUser = localStorage.getItem("dumHouseUser");
+      return savedUser ? JSON.parse(savedUser) : null;
+    } catch {
+      return null;
+    }
+  })();
 
   const totalOrders = orders.length;
 
@@ -76,14 +87,14 @@ function Profile({ orders, customer, onLogout }) {
 
           <div className="profile-info">
 
-            <h2>
-              {customer?.name || "Customer"}
-            </h2>
+            <h2>{profileCustomer?.name || "Customer"}</h2>
 
 
-            <p>
-              +91 {customer?.phone || ""}
-            </p>
+           <p>
+  {profileCustomer?.phone
+    ? `+91 ${profileCustomer.phone}`
+    : "Mobile number not available"}
+</p>
 
           </div>
 

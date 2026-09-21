@@ -547,3 +547,702 @@
         font-size: 13px;
     }
 }
+/* =====================================================
+   FINAL DUM HOUSE LOGIN THEME
+   Midnight Blue + White + Red
+===================================================== */
+
+.login-page {
+    background: #F3F4F6 !important;
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+    box-sizing: border-box !important;
+}
+
+.login-container {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    border-top: 4px solid #EF4444 !important;
+    border-radius: 18px !important;
+    box-shadow: 0 12px 35px rgba(17, 24, 39, 0.12) !important;
+}
+
+/* Logo */
+.login-logo {
+    background: #FFF1F2 !important;
+    color: #111827 !important;
+    border: 2px solid #EF4444 !important;
+    box-shadow: none !important;
+}
+
+/* Heading */
+.login-heading h1 {
+    color: #111827 !important;
+}
+
+.login-heading p {
+    color: #6B7280 !important;
+}
+
+.login-heading strong {
+    color: #EF4444 !important;
+}
+
+/* Labels */
+.form-group label {
+    color: #111827 !important;
+}
+
+/* Inputs */
+.form-group input {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+.form-group input::placeholder {
+    color: #9CA3AF !important;
+}
+
+.form-group input:hover {
+    border-color: #FCA5A5 !important;
+}
+
+.form-group input:focus {
+    border-color: #EF4444 !important;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.10) !important;
+}
+
+/* Continue / OTP buttons */
+.login-submit-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.login-submit-btn:hover {
+    background: #F87171 !important;
+    box-shadow: 0 8px 20px rgba(239, 68, 68, 0.22) !important;
+}
+
+/* Existing / New user switch */
+.login-switch p {
+    color: #6B7280 !important;
+}
+
+.login-switch button {
+    color: #EF4444 !important;
+}
+
+.login-switch button:hover {
+    color: #F87171 !important;
+}
+
+/* OTP box */
+.login-demo-otp {
+    background: #FFF1F2 !important;
+    border: 1px solid #FECACA !important;
+    color: #374151 !important;
+}
+
+.login-demo-otp strong {
+    color: #EF4444 !important;
+}
+
+/* Back / Resend */
+.back-login-btn {
+    color: #6B7280 !important;
+}
+
+.back-login-btn:hover {
+    color: #EF4444 !important;
+}
+
+/* OTP spacing */
+.form-group input[type="text"][inputmode="numeric"],
+.form-group input[type="number"] {
+    color: #111827 !important;
+}
+
+
+/* =====================================================
+   RESPONSIVE LEFT / RIGHT SPACING
+===================================================== */
+
+@media (max-width: 1000px) {
+    .login-page {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+}
+
+@media (max-width: 750px) {
+    .login-page {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-page {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+}
+/* =====================================================
+   UNIQUE PREMIUM LOGIN
+   Dum House — Midnight Blue + White + Red
+===================================================== */
+
+.login-page {
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(239, 68, 68, 0.08),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 85% 85%,
+            rgba(17, 24, 39, 0.08),
+            transparent 30%
+        ),
+        #F3F4F6 !important;
+
+    padding-left: 32px !important;
+    padding-right: 32px !important;
+}
+
+
+/* ================= CARD ================= */
+
+.login-container {
+    position: relative !important;
+    overflow: hidden !important;
+
+    max-width: 450px !important;
+
+    padding: 44px 42px 38px !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-radius: 22px !important;
+
+    box-shadow:
+        0 20px 55px rgba(17, 24, 39, 0.12),
+        0 5px 18px rgba(239, 68, 68, 0.05) !important;
+}
+
+
+/* Premium red top line */
+.login-container::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background: #EF4444;
+}
+
+
+/* ================= LOGO ================= */
+
+.login-logo {
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 auto 17px !important;
+
+    background: #111827 !important;
+
+    color: #FFFFFF !important;
+
+    border: 3px solid #EF4444 !important;
+
+    border-radius: 18px !important;
+
+    font-size: 21px !important;
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 8px 22px rgba(17, 24, 39, 0.18) !important;
+
+    transform: rotate(-3deg);
+}
+
+
+/* Keep DH straight */
+.login-logo {
+    letter-spacing: -1px !important;
+}
+
+
+/* ================= HEADING ================= */
+
+.login-heading h1 {
+    color: #111827 !important;
+
+    font-size: 30px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: -0.7px !important;
+}
+
+.login-heading p {
+    color: #6B7280 !important;
+
+    font-size: 14px !important;
+}
+
+.login-heading strong {
+    display: inline-block;
+
+    margin-top: 2px;
+
+    color: #EF4444 !important;
+
+    font-weight: 750 !important;
+}
+
+
+/* ================= FORM ================= */
+
+.login-form {
+    gap: 15px !important;
+}
+
+.form-group label {
+    color: #374151 !important;
+
+    font-size: 13px !important;
+    font-weight: 750 !important;
+}
+
+
+/* ================= INPUT ================= */
+
+.form-group input {
+    height: 54px !important;
+
+    padding: 0 16px !important;
+
+    background: #F9FAFB !important;
+
+    color: #111827 !important;
+
+    border: 1px solid #E5E7EB !important;
+
+    border-radius: 12px !important;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease !important;
+}
+
+.form-group input:hover {
+    background: #FFFFFF !important;
+
+    border-color: #FCA5A5 !important;
+}
+
+.form-group input:focus {
+    background: #FFFFFF !important;
+
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.10),
+        0 4px 12px rgba(17, 24, 39, 0.05) !important;
+
+    transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+    color: #9CA3AF !important;
+}
+
+
+/* ================= MAIN BUTTON ================= */
+
+.login-submit-btn {
+    position: relative !important;
+
+    height: 54px !important;
+
+    margin-top: 6px !important;
+
+    overflow: hidden !important;
+
+    background: #EF4444 !important;
+
+    color: #FFFFFF !important;
+
+    border-radius: 12px !important;
+
+    font-size: 15px !important;
+    font-weight: 800 !important;
+
+    box-shadow:
+        0 8px 20px rgba(239, 68, 68, 0.18) !important;
+}
+
+.login-submit-btn::after {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 60%;
+    height: 100%;
+
+    background: rgba(255, 255, 255, 0.14);
+
+    transform: skewX(-20deg);
+
+    transition: left 0.45s ease;
+}
+
+.login-submit-btn:hover::after {
+    left: 130%;
+}
+
+.login-submit-btn:hover {
+    background: #F87171 !important;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* ================= SWITCH ================= */
+
+.login-switch {
+    margin-top: 25px !important;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #F1F5F9;
+}
+
+.login-switch p {
+    color: #6B7280 !important;
+}
+
+.login-switch button {
+    color: #EF4444 !important;
+
+    font-weight: 750 !important;
+}
+
+.login-switch button:hover {
+    color: #F87171 !important;
+
+    text-decoration: none !important;
+}
+
+
+/* ================= BACK / RESEND ================= */
+
+.back-login-btn {
+    color: #6B7280 !important;
+
+    font-weight: 650 !important;
+}
+
+.back-login-btn:hover {
+    color: #EF4444 !important;
+
+    transform: translateX(-3px) !important;
+}
+
+
+/* ================= OTP INPUT ================= */
+
+.form-group input[type="text"][inputmode="numeric"],
+.form-group input[type="number"] {
+    text-align: center !important;
+
+    font-size: 20px !important;
+    font-weight: 750 !important;
+
+    letter-spacing: 6px !important;
+}
+
+
+/* ================= DEMO OTP ================= */
+
+.login-demo-otp {
+    background: #FFF1F2 !important;
+
+    border: 1px solid #FECACA !important;
+
+    border-left: 4px solid #EF4444 !important;
+
+    border-radius: 11px !important;
+
+    color: #374151 !important;
+}
+
+.login-demo-otp strong {
+    color: #EF4444 !important;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+    .login-page {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .login-container {
+        padding: 38px 28px 32px !important;
+    }
+}
+
+@media (max-width: 400px) {
+    .login-page {
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+    }
+
+    .login-container {
+        padding: 34px 20px 29px !important;
+        border-radius: 18px !important;
+    }
+
+    .login-logo {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 19px !important;
+    }
+
+    .login-heading h1 {
+        font-size: 25px !important;
+    }
+}
+/* =====================================================
+   LOGIN — FINAL BALANCED SPACING
+===================================================== */
+
+.login-container {
+    padding: 30px 38px 26px !important;
+}
+
+/* LOGO → HEADING */
+.login-logo {
+    width: 58px !important;
+    height: 58px !important;
+    margin-bottom: 10px !important;
+}
+
+/* HEADING */
+.login-heading h1 {
+    margin: 0 0 4px !important;
+}
+
+.login-heading p {
+    margin: 0 0 15px !important;
+    line-height: 1.4 !important;
+}
+
+/* FORM */
+.login-form {
+    gap: 0 !important;
+}
+
+/* EACH FIELD */
+.form-group {
+    margin-bottom: 13px !important;
+}
+
+/* LABEL → INPUT */
+.form-group label {
+    margin-bottom: 5px !important;
+}
+
+/* INPUT */
+.form-group input {
+    height: 50px !important;
+}
+
+/* BUTTON */
+.login-submit-btn {
+    height: 50px !important;
+    margin-top: 1px !important;
+}
+
+/* BUTTON → SWITCH */
+.login-switch {
+    margin-top: 17px !important;
+    padding-top: 13px !important;
+}
+
+/* OTP / BACK BUTTONS */
+.back-login-btn {
+    margin-top: 12px !important;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .login-container {
+        padding: 28px 22px 24px !important;
+    }
+
+    .login-logo {
+        width: 56px !important;
+        height: 56px !important;
+        margin-bottom: 9px !important;
+    }
+
+    .login-heading h1 {
+        margin-bottom: 4px !important;
+        font-size: 26px !important;
+    }
+
+    .login-heading p {
+        margin-bottom: 14px !important;
+    }
+
+    .form-group {
+        margin-bottom: 12px !important;
+    }
+
+    .form-group input,
+    .login-submit-btn {
+        height: 49px !important;
+    }
+
+    .login-switch {
+        margin-top: 16px !important;
+        padding-top: 12px !important;
+    }
+}
+/* =====================================================
+   LOGIN — PREMIUM FORM DESIGN
+===================================================== */
+
+.login-form .form-group {
+    position: relative !important;
+}
+
+.login-form .form-group label {
+    color: #111827 !important;
+    font-size: 13px !important;
+    font-weight: 750 !important;
+    letter-spacing: 0.1px !important;
+}
+
+/* Input premium style */
+.login-form .form-group input {
+    background: #F9FAFB !important;
+
+    border: 1px solid #D1D5DB !important;
+    border-radius: 12px !important;
+
+    color: #111827 !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(17, 24, 39, 0.03) !important;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease !important;
+}
+
+/* Hover */
+.login-form .form-group input:hover {
+    background: #FFFFFF !important;
+    border-color: #9CA3AF !important;
+}
+
+/* Focus */
+.login-form .form-group input:focus {
+    background: #FFFFFF !important;
+
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.08),
+        0 4px 12px rgba(17, 24, 39, 0.05) !important;
+}
+
+/* Placeholder */
+.login-form .form-group input::placeholder {
+    color: #9CA3AF !important;
+}
+
+
+/* =====================================================
+   MOBILE NUMBER — PHONE FIELD LOOK
+===================================================== */
+
+.login-form .form-group input[type="tel"] {
+    letter-spacing: 0.4px !important;
+}
+
+
+/* =====================================================
+   OTP — PREMIUM LOOK
+===================================================== */
+
+.login-form .form-group input[type="text"][inputmode="numeric"] {
+    background: #FFF1F2 !important;
+
+    border-color: #FECACA !important;
+
+    text-align: center !important;
+
+    font-size: 21px !important;
+    font-weight: 800 !important;
+
+    letter-spacing: 7px !important;
+}
+
+.login-form .form-group input[type="text"][inputmode="numeric"]:focus {
+    background: #FFFFFF !important;
+
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.10) !important;
+}
+
+
+/* =====================================================
+   BUTTON — MATCH INPUT DESIGN
+===================================================== */
+
+.login-submit-btn {
+    border-radius: 12px !important;
+
+    background: #EF4444 !important;
+
+    box-shadow:
+        0 7px 16px rgba(239, 68, 68, 0.18) !important;
+
+    font-weight: 800 !important;
+}
+
+.login-submit-btn:hover {
+    background: #F87171 !important;
+
+    box-shadow:
+        0 9px 20px rgba(239, 68, 68, 0.23) !important;
+}
