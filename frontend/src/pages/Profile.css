@@ -689,3 +689,392 @@
         box-shadow: none;
     }
 }
+/* =========================================================
+   DUM HOUSE - PROFILE PAGE
+   MIDNIGHT BLUE + WHITE + RED
+   FINAL THEME
+========================================================= */
+
+/* PAGE */
+
+.profile-page {
+    background: #F3F4F6 !important;
+}
+
+
+/* HEADING */
+
+.profile-heading h1 {
+    color: #111827 !important;
+}
+
+.profile-heading p {
+    color: #6B7280 !important;
+}
+
+
+/* PROFILE CARD */
+
+.profile-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow:
+        0 10px 30px rgba(17, 24, 39, 0.12) !important;
+}
+
+.profile-card:hover {
+    border-color: #D1D5DB !important;
+    box-shadow:
+        0 14px 38px rgba(17, 24, 39, 0.16) !important;
+}
+
+
+/* AVATAR */
+
+.profile-avatar {
+    background: #FFF1F2 !important;
+    border: 1px solid #FECACA !important;
+    color: #EF4444 !important;
+}
+
+
+/* PROFILE INFO */
+
+.profile-info h2 {
+    color: #111827 !important;
+}
+
+.profile-info p {
+    color: #6B7280 !important;
+}
+
+
+/* STATS */
+
+.stat-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow:
+        0 8px 25px rgba(17, 24, 39, 0.10) !important;
+}
+
+.stat-card:hover {
+    box-shadow:
+        0 12px 30px rgba(17, 24, 39, 0.15) !important;
+}
+
+.stat-card > span {
+    color: #EF4444 !important;
+}
+
+.stat-card strong {
+    color: #111827 !important;
+}
+
+.stat-card p {
+    color: #6B7280 !important;
+}
+
+
+/* PROFILE MENU */
+
+.profile-menu {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow:
+        0 10px 30px rgba(17, 24, 39, 0.12) !important;
+}
+
+.profile-menu button {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border-bottom-color: #E5E7EB !important;
+}
+
+.profile-menu button:hover {
+    background: #FFF1F2 !important;
+}
+
+.profile-menu button > span:first-child {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+}
+
+.profile-menu strong {
+    color: #111827 !important;
+}
+
+.profile-menu p {
+    color: #6B7280 !important;
+}
+
+.profile-menu button > span:last-child {
+    color: #EF4444 !important;
+}
+
+
+/* LOGOUT */
+
+.profile-logout-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.profile-logout-btn:hover {
+    background: #F87171 !important;
+    box-shadow:
+        0 8px 20px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .profile-card,
+    .stat-card,
+    .profile-menu {
+        background: #FFFFFF !important;
+        border-color: #E5E7EB !important;
+    }
+
+}
+/* =========================================
+   PROFILE LUCIDE ICONS
+========================================= */
+
+.profile-avatar svg {
+    width: 38px !important;
+    height: 38px !important;
+    color: #EF4444 !important;
+    stroke: #EF4444 !important;
+    stroke-width: 2.2 !important;
+}
+
+.stat-card > span {
+    width: 44px !important;
+    height: 44px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #EF4444 !important;
+    color: #111827 !important;
+
+    border-radius: 12px !important;
+}
+
+.stat-card > span svg {
+    width: 21px !important;
+    height: 21px !important;
+
+    color: #111827 !important;
+    stroke: #111827 !important;
+    stroke-width: 2.2 !important;
+}
+
+.profile-menu button > span:first-child {
+    width: 42px !important;
+    height: 42px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+
+    border: 1px solid #FECACA !important;
+    border-radius: 11px !important;
+}
+
+.profile-menu button > span:first-child svg {
+    width: 20px !important;
+    height: 20px !important;
+
+    color: #EF4444 !important;
+    stroke: #EF4444 !important;
+    stroke-width: 2.2 !important;
+}
+
+.profile-menu button > span:last-child {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.profile-menu button > span:last-child svg {
+    width: 20px !important;
+    height: 20px !important;
+
+    color: #EF4444 !important;
+    stroke: #EF4444 !important;
+    stroke-width: 2.3 !important;
+}
+/* =========================================
+   PROFILE STATS - SIDE BY SIDE
+========================================= */
+
+.profile-stats {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 20px !important;
+}
+
+/* Icon box */
+
+.profile-stats .stat-card > span {
+    width: 46px !important;
+    height: 46px !important;
+    min-width: 46px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #FFFFFF !important;
+    color: #111827 !important;
+
+    border: 2px solid #EF4444 !important;
+    border-radius: 12px !important;
+
+    box-sizing: border-box !important;
+}
+
+/* Icon */
+
+.profile-stats .stat-card > span svg {
+    width: 22px !important;
+    height: 22px !important;
+
+    color: #111827 !important;
+    stroke: #111827 !important;
+    stroke-width: 2.3 !important;
+}
+
+/* Number */
+
+.profile-stats .stat-card strong {
+    color: #111827 !important;
+}
+
+/* Label */
+
+.profile-stats .stat-card p {
+    color: #6B7280 !important;
+}
+
+
+/* =========================================
+   MOBILE - KEEP SIDE BY SIDE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .profile-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    .profile-stats .stat-card {
+        padding: 16px !important;
+    }
+
+    .profile-stats .stat-card > span {
+        width: 40px !important;
+        height: 40px !important;
+        min-width: 40px !important;
+        border-radius: 10px !important;
+    }
+
+    .profile-stats .stat-card > span svg {
+        width: 19px !important;
+        height: 19px !important;
+    }
+
+    .profile-stats .stat-card strong {
+        font-size: 22px !important;
+    }
+
+    .profile-stats .stat-card p {
+        font-size: 12px !important;
+    }
+}/* =========================================
+   PROFILE STATS - LARGE BLUE VALUES
+========================================= */
+
+.profile-stats .stat-card strong {
+    color: #111827 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.profile-stats .stat-card p {
+    color: #6B7280 !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .profile-stats .stat-card strong {
+        font-size: 22px !important;
+    }
+
+    .profile-stats .stat-card p {
+        font-size: 15px !important;
+    color: #111827 !important;
+    }
+}
+/* =========================================
+   PROFILE AVATAR ICON
+========================================= */
+
+.profile-avatar {
+    background: #FFFFFF !important;
+    border: 2px solid #EF4444 !important;
+    color: #111827 !important;
+}
+
+.profile-avatar svg {
+    width: 38px !important;
+    height: 38px !important;
+    color: #111827 !important;
+    stroke: #111827 !important;
+    stroke-width: 2.2 !important;
+}
+/* =========================================
+   PROFILE MENU - BUTTON GAP
+========================================= */
+
+.profile-menu {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 5px !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding-bottom: 45px;
+}
+
+.profile-menu button {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 14px !important;
+}
+
+.profile-menu button:last-child {
+    border-bottom: 1px solid #E5E7EB !important;
+}
+/* PROFILE ICON BORDERS - THIN */
+
+.profile-avatar {
+    border: 1px solid #EF4444 !important;
+}
+
+.profile-stats .stat-card > span {
+    border: 1px solid #EF4444 !important;
+}

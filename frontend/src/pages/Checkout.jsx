@@ -1,6 +1,16 @@
   import { useState } from "react";
   import { useNavigate } from "react-router-dom";
   import "./Checkout.css";
+  import {
+  MapPin,
+  UserRound,
+  Phone,
+  House,
+  Building2,
+  MapPinned,
+ShieldCheck,
+  CheckCircle2,
+} from "lucide-react";
 
 
   
@@ -212,126 +222,150 @@ function handleChange(e) {
               onSubmit={handleSubmit}
             >
 
-              <h2>
-                Delivery Details
-              </h2>
+              <div className="checkout-form-heading">
+  <div className="checkout-heading-icon">
+    <MapPin />
+  </div>
+
+  <div>
+    <h2>Delivery Details</h2>
+    <p>Please enter your delivery information</p>
+  </div>
+</div>
 
 
               {/* FULL NAME */}
 
               <div className="form-group">
+  <label>
+    <span className="form-label-icon">
+      <UserRound />
+    </span>
+    <span>Full Name</span>
 
-                <label>
-                  Full Name
-                </label>
+    <span className="field-badge blue">
+      <CheckCircle2 />
+      Auto filled
+    </span>
+  </label>
 
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter your full name"
-                  value={formData.name}
-                  readOnly                
-                  required
-                />
-
-              </div>
+  <input
+    type="text"
+    name="name"
+    placeholder="Enter your full name"
+    value={formData.name}
+    readOnly
+    required
+  />
+</div>
 
 
               {/* MOBILE */}
 
               <div className="form-group">
+  <label>
+    <span className="form-label-icon">
+      <Phone />
+    </span>
+    <span>Mobile Number</span>
 
-                <label>
-                  Mobile Number
-                </label>
+    <span className="field-badge green">
+      <CheckCircle2 />
+      10 digits required
+    </span>
+  </label>
 
-                <input
-                  type="tel"
-                  name="phone"
-                  placeholder="Enter 10-digit mobile number"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  maxLength="10"
-                  required
-                />
-
-              </div>
+  <input
+    type="tel"
+    name="phone"
+    placeholder="Enter 10-digit mobile number"
+    value={formData.phone}
+    onChange={handleChange}
+    maxLength="10"
+    required
+  />
+</div>
 
 
               {/* ADDRESS */}
 
               <div className="form-group">
+  <label>
+    <span className="form-label-icon">
+      <House />
+    </span>
+    <span>Delivery Address</span>
+  </label>
 
-                <label>
-                  Delivery Address
-                </label>
-
-                <textarea
-                  name="address"
-                  placeholder="House No, Street, Area"
-                  value={formData.address}
-                  onChange={handleChange}
-                  rows="4"
-                  required
-                />
-
-              </div>
+  <textarea
+    name="address"
+    placeholder="House No, Street, Area"
+    value={formData.address}
+    onChange={handleChange}
+    rows="4"
+    required
+  />
+</div>
 
 
               {/* CITY + PINCODE */}
 
-              <div className="form-row">
+              <div className="form-group">
+  <label>
+    <span className="form-label-icon">
+      <Building2 />
+    </span>
+    <span>City</span>
+  </label>
 
+  <input
+    type="text"
+    name="city"
+    placeholder="City"
+    value={formData.city}
+    onChange={handleChange}
+    required
+  />
+</div>
 
-                <div className="form-group">
+<div className="form-group">
+  <label>
+    <span className="form-label-icon">
+      <MapPinned />
+    </span>
+    <span>Pincode</span>
 
-                  <label>
-                    City
-                  </label>
+    <span className="field-badge green">
+      <CheckCircle2 />
+      6 digits required
+    </span>
+  </label>
 
-                  <input
-                    type="text"
-                    name="city"
-                    placeholder="City"
-                    value={formData.city}
-                    onChange={handleChange}
-                    required
-                  />
-
-                </div>
-
-
-                <div className="form-group">
-
-                  <label>
-                    Pincode
-                  </label>
-
-                  <input
-                    type="text"
-                    name="pincode"
-                    placeholder="6-digit pincode"
-                    value={formData.pincode}
-                    onChange={handleChange}
-                    maxLength="6"
-                    inputMode="numeric"
-                    required
-                  />
-
-                </div>
-
-
-              </div>
-
+  <input
+    type="text"
+    name="pincode"
+    placeholder="6-digit pincode"
+    value={formData.pincode}
+    onChange={handleChange}
+    maxLength="6"
+    inputMode="numeric"
+    required
+  />
+</div>
 
               {/* PAYMENT BUTTON */}
 
               <button
-                type="submit"
-                className="payment-btn"
-              >
-                Continue to Payment →
-              </button>
+  type="submit"
+  className="payment-btn"
+>
+  Continue to Payment →
+</button>
+<div className="checkout-security">
+  <ShieldCheck />
+  <span>Your information is secure with us</span>
+</div>
+
 
 
             </form>

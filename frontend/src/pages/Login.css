@@ -11,7 +11,18 @@
 
     padding: 110px 20px 50px;
 
-    background: #f8f8f8;
+    background:
+        radial-gradient(
+            circle at top left,
+            rgba(24, 58, 55, 0.08),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at bottom right,
+            rgba(232, 163, 23, 0.06),
+            transparent 35%
+        ),
+        #F5F8F6;
 
     box-sizing: border-box;
 }
@@ -25,37 +36,36 @@
     width: 100%;
     max-width: 440px;
 
-    padding: 40px;
+    padding: 42px 40px;
 
     background: #ffffff;
 
-    border: 1px solid #eeeeee;
+    border: 1px solid #D5E4DE;
 
     border-radius: 22px;
 
     box-shadow:
-        0 12px 35px rgba(0, 0, 0, 0.08);
+        0 20px 55px rgba(24, 58, 55, 0.10),
+        0 4px 14px rgba(24, 58, 55, 0.05);
 
     text-align: center;
 
     box-sizing: border-box;
 
-    animation: loginCardIn 0.35s ease;
+    animation: loginCardIn 0.4s ease;
 }
 
 
 @keyframes loginCardIn {
-
     from {
         opacity: 0;
-        transform: translateY(12px);
+        transform: translateY(16px) scale(0.98);
     }
 
     to {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
     }
-
 }
 
 
@@ -69,20 +79,20 @@
 
 
 .login-heading h1 {
-    margin: 0 0 10px;
+    margin: 0 0 7px;
 
-    color: #222222;
+    color: #183A37;
 
     font-size: 30px;
 
-    font-weight: 700;
+    font-weight: 750;
 
-    letter-spacing: -0.3px;
+    letter-spacing: -0.5px;
 }
 
 
 .login-heading p {
-    margin: 0 0 30px;
+    margin: 0 0 22px;
 
     color: #777777;
 
@@ -93,11 +103,11 @@
 
 
 .login-heading strong {
-    color: #ff6b00;
+    color: #2F5D50;
 
     font-size: 14px;
 
-    font-weight: 600;
+    font-weight: 650;
 }
 
 
@@ -109,10 +119,9 @@
     width: 100%;
 
     display: flex;
-
     flex-direction: column;
 
-    gap: 18px;
+    gap: 12px;
 
     text-align: left;
 }
@@ -124,111 +133,134 @@
 
 .form-group {
     width: 100%;
+    margin: 0;
 }
 
 
 .form-group label {
     display: block;
 
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
-    color: #333333;
+    color: #2b2b2b;
 
     font-size: 14px;
 
-    font-weight: 600;
+    font-weight: 650;
 }
 
+
+/* =====================================================
+   INPUT
+===================================================== */
 
 .form-group input {
     width: 100%;
 
-    height: 50px;
+    height: 52px;
 
     padding: 0 15px;
 
-    border: 1px solid #dddddd;
+    border: 1px solid #dedede;
 
-    border-radius: 10px;
+    border-radius: 11px;
 
     outline: none;
 
     background: #ffffff;
 
-    color: #222222;
+    color: #202020;
 
     font-size: 15px;
 
     box-sizing: border-box;
 
     transition:
-        border-color 0.25s ease,
-        box-shadow 0.25s ease;
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
 }
 
 
 .form-group input::placeholder {
-    color: #aaaaaa;
+    color: #a5a5a5;
 }
 
 
 .form-group input:hover {
-    border-color: #cccccc;
+    border-color: #b9ccc6;
 }
 
 
 .form-group input:focus {
-    border-color: #ff6b00;
+    border-color: #2F5D50;
+
+    background: #fbfdfc;
 
     box-shadow:
-        0 0 0 3px rgba(255, 107, 0, 0.10);
+        0 0 0 3px rgba(47, 93, 80, 0.10);
 }
 
 
 /* =====================================================
-   LOGIN / OTP BUTTON
+   LOGIN / SEND OTP BUTTON
 ===================================================== */
 
 .login-submit-btn {
     width: 100%;
 
-    height: 50px;
+    height: 52px;
 
-    margin-top: 5px;
+    margin-top: 4px;
 
     border: none;
 
-    border-radius: 10px;
+    border-radius: 11px;
 
-    background: #ff6b00;
+    background: #183A37;
 
     color: #ffffff;
 
-    font-size: 16px;
+    font-size: 15px;
 
-    font-weight: 600;
+    font-weight: 650;
+
+    letter-spacing: 0.1px;
 
     cursor: pointer;
 
     transition:
-        background 0.25s ease,
+        background 0.2s ease,
         transform 0.2s ease,
-        box-shadow 0.25s ease;
+        box-shadow 0.2s ease;
 }
 
 
 .login-submit-btn:hover {
-    background: #e85d04;
+    background: #2F5D50;
 
     transform: translateY(-2px);
 
     box-shadow:
-        0 7px 18px rgba(255, 107, 0, 0.20);
+        0 8px 20px rgba(24, 58, 55, 0.20);
 }
 
 
 .login-submit-btn:active {
     transform: translateY(0);
+
+    box-shadow: none;
+}
+
+
+.login-submit-btn:disabled {
+    opacity: 0.65;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
 }
 
 
@@ -237,12 +269,11 @@
 ===================================================== */
 
 .login-switch {
-    margin-top: 25px;
+    margin-top: 26px;
 
     display: flex;
 
     align-items: center;
-
     justify-content: center;
 
     gap: 6px;
@@ -271,17 +302,21 @@
 
     background: transparent;
 
-    color: #ff6b00;
+    color: #2F5D50;
 
     font-size: 14px;
 
-    font-weight: 600;
+    font-weight: 650;
 
     cursor: pointer;
+
+    transition: color 0.2s ease;
 }
 
 
 .login-switch button:hover {
+    color: #E8A317;
+
     text-decoration: underline;
 }
 
@@ -295,28 +330,35 @@
 
     margin-bottom: 0;
 
-    padding: 10px;
+    padding: 12px 14px;
 
-    background: #fff8f2;
+    background:
+        linear-gradient(
+            135deg,
+            #F5F8F6,
+            #FFF8E8
+        );
 
-    border: 1px solid #ffe5d2;
+    border: 1px solid #D5E4DE;
 
-    border-radius: 8px;
+    border-radius: 10px;
 
-    color: #ff6b00;
+    color: #2F5D50;
 
     font-size: 13px;
 
     font-weight: 600;
+
+    line-height: 1.5;
 
     text-align: center;
 }
 
 
 .login-demo-otp strong {
-    color: #ff6b00;
+    color: #E8A317;
 
-    font-weight: 700;
+    font-weight: 750;
 }
 
 
@@ -327,7 +369,7 @@
 .back-login-btn {
     display: block;
 
-    margin: 20px auto 0;
+    margin: 21px auto 0;
 
     padding: 0;
 
@@ -335,18 +377,65 @@
 
     background: transparent;
 
-    color: #ff6b00;
+    color: #777777;
 
     font-size: 14px;
 
     font-weight: 600;
 
     cursor: pointer;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
 }
 
 
 .back-login-btn:hover {
-    text-decoration: underline;
+    color: #2F5D50;
+
+    transform: translateX(-2px);
+}
+
+
+/* =====================================================
+   OTP INPUT SPECIAL STYLE
+===================================================== */
+
+.form-group input[type="text"][inputmode="numeric"],
+.form-group input[type="number"] {
+    letter-spacing: 2px;
+}
+
+
+/* =====================================================
+   LOGIN LOGO
+===================================================== */
+
+.login-logo {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #183A37;
+
+    color: #E8A317;
+
+    font-size: 20px;
+
+    font-weight: 750;
+
+    letter-spacing: -0.5px;
+
+    box-shadow:
+        0 8px 20px rgba(24, 58, 55, 0.20);
 }
 
 
@@ -365,34 +454,37 @@
 
 
     .login-container {
-        padding: 30px 22px;
+        max-width: 440px;
 
-        border-radius: 18px;
+        padding: 32px 23px;
+
+        border-radius: 19px;
     }
 
 
     .login-heading h1 {
-        font-size: 26px;
+        font-size: 27px;
     }
 
 
     .login-heading p {
         font-size: 13px;
 
-        margin-bottom: 25px;
+        margin-bottom: 26px;
     }
 
 
     .form-group input,
     .login-submit-btn {
-        height: 48px;
+        height: 50px;
     }
 
 
     .login-demo-otp {
         font-size: 13px;
-    }
 
+        padding: 11px;
+    }
 }
 
 
@@ -402,18 +494,44 @@
 
 @media (max-width: 400px) {
 
+    .login-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+
     .login-container {
-        padding: 28px 18px;
+        padding: 29px 18px;
+
+        border-radius: 17px;
     }
 
 
     .login-heading h1 {
-        font-size: 24px;
+        font-size: 25px;
+    }
+
+
+    .login-heading p {
+        font-size: 13px;
+    }
+
+
+    .form-group label {
+        font-size: 13px;
+    }
+
+
+    .form-group input,
+    .login-submit-btn {
+        height: 48px;
+
+        font-size: 14px;
     }
 
 
     .login-switch {
-        flex-wrap: wrap;
+        margin-top: 23px;
 
         font-size: 13px;
     }
@@ -428,5 +546,4 @@
     .back-login-btn {
         font-size: 13px;
     }
-
 }

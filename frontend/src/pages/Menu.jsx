@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Menu.css";
 import FoodCard from "../components/FoodCard";
+import { FaSearch } from "react-icons/fa";
 
 function Menu({
   setCartCount,
@@ -75,17 +76,19 @@ function Menu({
 
       <div className="search-container">
 
-        <input
-          type="text"
-          placeholder="Search your favorite food..."
-          className="search-input"
-          value={searchTerm}
-          onChange={(e) =>
-            setSearchTerm(e.target.value)
-          }
-        />
+  <input
+    type="text"
+    placeholder="Search your favorite food..."
+    className="search-input"
+    value={searchTerm}
+    onChange={(e) =>
+      setSearchTerm(e.target.value)
+    }
+  />
 
-      </div>
+  <FaSearch className="search-icon" />
+
+</div>
 
       {/* CATEGORY */}
 

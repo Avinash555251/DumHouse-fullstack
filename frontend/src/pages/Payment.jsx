@@ -1,6 +1,22 @@
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import "./Payment.css";
+import {
+  WalletCards,
+  CreditCard,
+  Banknote,
+  QrCode,
+  CheckCircle2,
+  ShieldCheck,
+  UserRound,
+  Phone,
+  House,
+  Building2,
+  LockKeyhole,
+  ReceiptText,
+ Landmark,
+} from "lucide-react";
+
 
 function Payment({
   setCartItems,
@@ -22,7 +38,7 @@ function Payment({
 
   const [paymentMethod, setPaymentMethod] =
     useState("upi");
-
+const [showCardDetails, setShowCardDetails] = useState(false);
   /* =====================================================
      PAYMENT PROCESSING
   ===================================================== */
@@ -120,20 +136,20 @@ function Payment({
      PAYMENT METHOD CHANGE
   ===================================================== */
 
-  function changePaymentMethod(method) {
-    setPaymentMethod(method);
+ function changePaymentMethod(method) {
+  setPaymentMethod(method);
 
-    setCardNumber("");
-    setExpiry("");
-    setCvv("");
+  setCardNumber("");
+  setExpiry("");
+  setCvv("");
 
-    setIsProcessing(false);
-    setPaymentError("");
+  setIsProcessing(false);
+  setPaymentError("");
 
-    if (method !== "upi") {
-      localStorage.removeItem("dumHousePendingUpiOrder");
-    }
+  if (method !== "upi") {
+    localStorage.removeItem("dumHousePendingUpiOrder");
   }
+}
 
   /* =====================================================
      CARD NUMBER
@@ -476,15 +492,16 @@ function Payment({
 
         <div className="payment-heading">
 
-          <h1>
-            Payment
-          </h1>
+  <div className="payment-page-title-icon">
+    <WalletCards />
+  </div>
 
-          <p>
-            Choose your preferred payment method
-          </p>
+  <div>
+    <h1>Payment</h1>
+    <p>Complete your order securely</p>
+  </div>
 
-        </div>
+</div>
 
         <div className="payment-layout">
 
@@ -494,88 +511,108 @@ function Payment({
 
           <div className="payment-box">
 
-            <h2>
-              Payment Method
-            </h2>
+            <div className="payment-box-heading">
+  
+
+  <div>
+    <div className="payment-box-heading">
+
+  <div className="payment-box-heading-icon">
+ <Landmark /> </div>
+
+  <div>
+    <h2>Choose Payment Method</h2>
+    <p>Select how you'd like to pay</p>
+  </div>
+
+</div>
+  </div>
+</div>
 
             {/* ================= UPI ================= */}
 
             <label
-              className={`payment-option ${
-                paymentMethod === "upi"
-                  ? "selected"
-                  : ""
-              }`}
-            >
+  className={`payment-option ${
+    paymentMethod === "upi" ? "selected" : ""
+  }`}
+>
+  <div className="payment-method-icon upi-icon">
+    <QrCode />
+  </div>
 
-              <input
-                type="radio"
-                name="payment"
-                value="upi"
-                checked={
-                  paymentMethod === "upi"
-                }
-                onChange={() =>
-                  changePaymentMethod(
-                    "upi"
-                  )
-                }
-              />
+  <input
+    type="radio"
+    name="payment"
+    value="upi"
+    checked={paymentMethod === "upi"}
+    onChange={() => changePaymentMethod("upi")}
+  />
 
-              <div>
+  <div className="payment-option-content">
+    <h3>UPI Payment</h3>
+    <p>Google Pay • PhonePe • Paytm</p>
+  </div>
 
-                <h3>
-                  UPI Payment
-                </h3>
-
-                <p>
-                  Google Pay • PhonePe • Paytm
-                </p>
-
-              </div>
-
-            </label>
+  {paymentMethod === "upi" && (
+    <CheckCircle2 className="payment-selected-check" />
+  )}
+</label>
 
             {/* ================= CARD ================= */}
 
-            <label
-              className={`payment-option ${
-                paymentMethod === "card"
-                  ? "selected"
-                  : ""
-              }`}
-            >
+            {/* ================= CARD ================= */}
 
-              <input
-                type="radio"
-                name="payment"
-                value="card"
-                checked={
-                  paymentMethod === "card"
-                }
-                onChange={() =>
-                  changePaymentMethod(
-                    "card"
-                  )
-                }
-              />
+{/* ================= CARD ================= */}
 
-              <div>
+{/* ================= CARD ================= */}
 
-                <h3>
-                  Credit / Debit Card
-                </h3>
+<label
+  className={`payment-option ${
+    paymentMethod === "card" ? "selected" : ""
+  }`}
+  onClick={(e) => {
+    e.preventDefault();
 
-                <p>
-                  Currently unavailable
-                </p>
+    if (paymentMethod !== "card") {
+      changePaymentMethod("card");
+      setShowCardDetails(true);
+    } else {
+      setShowCardDetails((previous) => !previous);
+    }
+  }}
+>
 
-              </div>
+  {/* CARD ICON */}
+  <div className="payment-method-icon card-icon">
+    <CreditCard />
+  </div>
 
-            </label>
+  {/* RADIO */}
+  <input
+    type="radio"
+    name="payment"
+    value="card"
+    checked={paymentMethod === "card"}
+    readOnly
+  />
 
-            {paymentMethod === "card" && (
+  {/* CARD TEXT */}
+  <div className="payment-option-content">
+    <h3>Credit / Debit Card</h3>
 
+    <p>
+      Visa • Mastercard • RuPay
+    </p>
+  </div>
+
+  {paymentMethod === "card" && (
+    <CheckCircle2 className="payment-selected-check" />
+  )}
+
+</label>
+
+{paymentMethod === "card" &&
+  showCardDetails && (
               <div className="card-payment-fields">
 
                 <div className="payment-input">
@@ -648,40 +685,31 @@ function Payment({
             {/* ================= COD ================= */}
 
             <label
-              className={`payment-option ${
-                paymentMethod === "cod"
-                  ? "selected"
-                  : ""
-              }`}
-            >
+  className={`payment-option ${
+    paymentMethod === "cod" ? "selected" : ""
+  }`}
+>
+  <div className="payment-method-icon cod-icon">
+    <Banknote />
+  </div>
 
-              <input
-                type="radio"
-                name="payment"
-                value="cod"
-                checked={
-                  paymentMethod === "cod"
-                }
-                onChange={() =>
-                  changePaymentMethod(
-                    "cod"
-                  )
-                }
-              />
+  <input
+    type="radio"
+    name="payment"
+    value="cod"
+    checked={paymentMethod === "cod"}
+    onChange={() => changePaymentMethod("cod")}
+  />
 
-              <div>
+  <div className="payment-option-content">
+    <h3>Cash on Delivery</h3>
+    <p>Pay when your order arrives</p>
+  </div>
 
-                <h3>
-                  Cash on Delivery
-                </h3>
-
-                <p>
-                  Pay when your order arrives
-                </p>
-
-              </div>
-
-            </label>
+  {paymentMethod === "cod" && (
+    <CheckCircle2 className="payment-selected-check" />
+  )}
+</label>
 
             {paymentError && (
               <div className="payment-error" role="alert">
@@ -714,6 +742,10 @@ function Payment({
     {paymentError}
   </div>
 )}
+<div className="payment-security">
+  <ShieldCheck />
+  <span>Secure & encrypted payment</span>
+</div>
           </div>
 
           {/* =================================================
@@ -722,51 +754,75 @@ function Payment({
 
           <div className="payment-summary">
 
-            <h2>
-              Order Summary
-            </h2>
+  <div className="payment-summary-heading">
+    <div className="summary-heading-icon">
+  <ReceiptText />
+</div>
 
-            <div className="customer-info">
+    <div>
+      <h2>Order Summary</h2>
+      <p>Your order details</p>
+    </div>
+  </div>
 
-              <h3>
-                Delivery To
-              </h3>
 
-              <p>
-                {customer.name ||
-                  "Customer"}
-              </p>
+  <div className="customer-info">
 
-              <p>
-                {customer.phone}
-              </p>
+    <h3>Delivery To</h3>
 
-              <p>
-                {customer.address}
-              </p>
+    <p>
+      <UserRound />
+      <span>
+        {customer.name || "Customer"}
+      </span>
+    </p>
 
-              <p>
-                {customer.city} -{" "}
-                {customer.pincode}
-              </p>
+    <p>
+      <Phone />
+      <span>
+        {customer.phone}
+      </span>
+    </p>
 
-            </div>
+    <p>
+      <House />
+      <span>
+        {customer.address}
+      </span>
+    </p>
 
-            <hr />
+    <p>
+      <Building2 />
+      <span>
+        {customer.city} - {customer.pincode}
+      </span>
+    </p>
 
-            <div className="payment-total">
+  </div>
 
-              <span>
-                Total Amount
-              </span>
 
-              <strong>
-                ₹{total}
-              </strong>
+  <div className="payment-summary-divider">
+    <span>ORDER TOTAL</span>
+  </div>
 
-            </div>
 
-          </div>
+  <div className="payment-total">
+
+    <span>Total Amount</span>
+
+    <strong>
+      ₹{total}
+    </strong>
+
+  </div>
+
+
+  <div className="payment-summary-secure">
+    <LockKeyhole />
+    <span>Safe & secure checkout</span>
+  </div>
+
+</div>
 
         </div>
 

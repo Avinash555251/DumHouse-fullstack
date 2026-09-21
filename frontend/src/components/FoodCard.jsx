@@ -229,11 +229,12 @@ function FoodCard({
         ================================================= */}
 
         <button
-          type="button"
-          onClick={addItem}
-        >
-          Add to Cart
-        </button>
+  type="button"
+  className="food-add-btn"
+  onClick={addItem}
+>
+  Add to Cart
+</button>
 
 
       </div>

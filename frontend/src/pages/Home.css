@@ -260,7 +260,7 @@
 
     justify-content: flex-start;
 
-    color: #f3e8dd;
+    color:rgb(254, 249, 249);
 
     font-family:
         "Oswald",
@@ -839,7 +839,7 @@
 .why-us {
     padding: 90px 8%;
 
-    background: #ffffff;
+    background: #fff8f0;
 
     overflow: hidden;
 
@@ -1686,7 +1686,7 @@
 
 .best-sellers {
     padding: 50px 8%;
-    background: #f8f8f8;
+    background: #fff8f0;
     overflow: hidden;
     box-sizing: border-box;
 }
@@ -2243,4 +2243,692 @@
         font-size: 18px;
     }
 
+}
+/* =========================================================
+   COMPACT SECTION SPACING
+========================================================= */
+
+.best-sellers,
+.offers,
+.why-us,
+.reviews {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+
+/* Section heading gap */
+
+.section-heading {
+    margin-bottom: 25px;
+}
+
+
+/* View menu gap */
+
+.best-sellers .view-menu {
+    margin-top: 25px;
+}
+
+
+/* =========================================================
+   MOBILE - COMPACT
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .best-sellers,
+    .offers,
+    .why-us,
+    .reviews {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .section-heading {
+        margin-bottom: 20px;
+    }
+
+    .best-sellers .view-menu {
+        margin-top: 20px;
+    }
+}
+/* =========================================================
+   WHY US + REVIEWS - VISIBLE WHITE CARDS
+========================================================= */
+
+.why-us {
+    background: #f8f8f8;
+}
+
+.why-card,
+.review-card {
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .why-card,
+    .review-card {
+        border: 1px solid #e5e5e5;
+
+        box-shadow:
+            0 5px 16px rgba(0, 0, 0, 0.07);
+    }
+}
+/* =========================================================
+   WHY CHOOSE US + CUSTOMER REVIEWS
+   FINAL COLORS
+========================================================= */
+
+.why-us {
+    background: #fff4ea;
+}
+
+.reviews {
+    background: #f4f4f4;
+}
+
+
+/* ================= WHY CARDS ================= */
+
+.why-card {
+    background: #ffffff;
+
+    border: 1px solid #f1d8c4;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.why-card svg {
+    color: #ff6b00;
+}
+
+.why-card h3 {
+    color: #222222;
+}
+
+.why-card p {
+    color: #666666;
+}
+
+
+/* ================= REVIEW CARDS ================= */
+
+.review-card {
+    background: #ffffff;
+
+    border: 1px solid #dddddd;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.07);
+}
+
+.review-card h4 {
+    color: #ff6b00;
+}
+
+.stars {
+    color: #ffb703;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .why-us {
+        background: #fff4ea;
+    }
+
+    .reviews {
+        background: #f4f4f4;
+    }
+
+    .why-card,
+    .review-card {
+        box-shadow:
+            0 5px 16px rgba(0, 0, 0, 0.07);
+    }
+}
+/* =========================================================
+   CUSTOMER REVIEWS SECTION
+========================================================= */
+
+.reviews {
+    background: #fff4ea;
+}
+
+.review-card {
+    background: #ffffff;
+
+    border: 1px solid #f1d8c4;
+
+    box-shadow:
+        0 6px 20px rgba(0, 0, 0, 0.07);
+}
+@media (max-width: 700px) {
+
+    .reviews {
+        background: #fff4ea;
+    }
+
+    .review-card {
+        background: #ffffff;
+        border: 1px solid #f1d8c4;
+    }
+}
+/* Explore Menu + Order Now button gap */
+
+.hero-buttons {
+    gap:30px !important;
+}
+/* =========================================================
+   CLEAR SECTION CONTAINERS
+========================================================= */
+
+/* Best Sellers */
+.best-sellers {
+    background: #fff1e6 !important;
+    border-top: 1px solid #f1d2bb;
+    border-bottom: 1px solid #f1d2bb;
+}
+
+/* Offers */
+.offers {
+    background: #ffe9d6 !important;
+    border-top: 1px solid #efc8aa;
+    border-bottom: 1px solid #efc8aa;
+}
+
+/* Customer Reviews */
+.reviews {
+    background: #fff1e6 !important;
+    border-top: 1px solid #f1d2bb;
+    border-bottom: 1px solid #f1d2bb;
+}
+
+/* Cards inside sections */
+.best-sellers .food-card,
+.offers .offer-card,
+.reviews .review-card {
+    background: #ffffff;
+    border: 1px solid #e3d6cc;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+/* =========================================================
+   DUM HOUSE - PREMIUM GREEN + GOLD THEME
+========================================================= */
+
+/* ================= HERO ================= */
+
+.hero-hot {
+    color: #E8A317;
+}
+
+.hero-line-left {
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #E8A317
+        );
+}
+
+.hero-line-symbol {
+    color: #E8A317;
+}
+
+.hero-line-right {
+    background:
+        linear-gradient(
+            90deg,
+            #E8A317,
+            transparent
+        );
+}
+
+.hero-categories b {
+    color: #E8A317;
+}
+
+
+/* ================= HERO BUTTONS ================= */
+
+.hero-explore-btn {
+    background: #183A37;
+    border-color: #183A37;
+}
+
+.hero-explore-btn:hover {
+    background: #2F5D50;
+
+    box-shadow:
+        0 10px 25px rgba(24, 58, 55, 0.35);
+}
+
+.hero-order-btn {
+    background: rgba(24, 58, 55, 0.12);
+    border-color: #E8A317;
+}
+
+.hero-order-btn:hover {
+    background: rgba(232, 163, 23, 0.18);
+}
+
+
+/* ================= BEST SELLERS ================= */
+
+.best-sellers {
+    background: #EEF5F1 !important;
+    border-top: 1px solid #D5E4DE;
+    border-bottom: 1px solid #D5E4DE;
+}
+
+.best-sellers .price {
+    color: #183A37;
+}
+
+.best-sellers .add-btn {
+    background: #183A37;
+}
+
+.best-sellers .add-btn:hover {
+    background: #2F5D50;
+}
+
+.best-sellers .view-menu-btn {
+    background: #E8A317;
+    color: #183A37;
+}
+
+.best-sellers .view-menu-btn:hover {
+    background: #F0B52A;
+}
+
+
+/* ================= OFFERS ================= */
+
+.offers {
+    background: #FFF8E8 !important;
+    border-top: 1px solid #F1E2B8;
+    border-bottom: 1px solid #F1E2B8;
+}
+
+.offer-icon {
+    background: #EEF5F1;
+    color: #183A37;
+}
+
+.offer-card h3 {
+    color: #183A37;
+}
+
+.offer-card button {
+    background: #E8A317;
+    color: #183A37;
+}
+
+.offer-card button:hover {
+    background: #F0B52A;
+}
+
+
+/* ================= WHY CHOOSE US ================= */
+
+.why-us {
+    background: #EAF3EF !important;
+    border-top: 1px solid #D2E3DC;
+    border-bottom: 1px solid #D2E3DC;
+}
+
+.why-card {
+    background: #ffffff;
+    border: 1px solid #D5E4DE;
+}
+
+.why-card svg {
+    color: #183A37;
+}
+
+
+/* ================= CUSTOMER REVIEWS ================= */
+
+.reviews {
+    background: #F6F1E7 !important;
+    border-top: 1px solid #E8DDC8;
+    border-bottom: 1px solid #E8DDC8;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #E5DCCB;
+}
+
+.review-card h4 {
+    color: #183A37;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+    background: #122E2B;
+    border-top: 4px solid #E8A317;
+}
+
+.footer-box h2 {
+    color: #E8A317;
+}
+
+.social-icons svg {
+    color: #E8A317;
+}
+
+.social-icons svg:hover {
+    color: #ffffff;
+}
+/* =========================================================
+   DUM HOUSE - HOME PAGE
+   FINAL THEME
+   MIDNIGHT BLUE + WHITE + RED
+========================================================= */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero-hot {
+    color: #EF4444 !important;
+}
+
+.hero-line-left {
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #EF4444
+        ) !important;
+}
+
+.hero-line-symbol {
+    color: #EF4444 !important;
+}
+
+.hero-line-right {
+    background:
+        linear-gradient(
+            90deg,
+            #EF4444,
+            transparent
+        ) !important;
+}
+
+.hero-categories b {
+    color: #EF4444 !important;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-explore-btn {
+    background: #111827 !important;
+    border-color: #111827 !important;
+    color: #FFFFFF !important;
+}
+
+.hero-explore-btn:hover {
+    background: #374151 !important;
+    border-color: #374151 !important;
+
+    box-shadow:
+        0 10px 25px rgba(17, 24, 39, 0.30);
+}
+
+.hero-order-btn {
+    background: #EF4444 !important;
+    border-color: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.hero-order-btn:hover {
+    background: #F87171 !important;
+    border-color: #F87171 !important;
+}
+
+
+/* =========================================================
+   BEST SELLERS
+========================================================= */
+
+.best-sellers {
+    background: #F3F4F6 !important;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.best-sellers .price {
+    color: #111827 !important;
+}
+
+.best-sellers .add-btn {
+    background: #111827 !important;
+    color: #FFFFFF !important;
+}
+
+.best-sellers .add-btn:hover {
+    background: #374151 !important;
+}
+
+.best-sellers .view-menu-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.best-sellers .view-menu-btn:hover {
+    background: #F87171 !important;
+}
+
+
+/* =========================================================
+   OFFERS
+========================================================= */
+
+.offers {
+    background: #FFF1F2 !important;
+    border-top: 1px solid #FECACA;
+    border-bottom: 1px solid #FECACA;
+}
+
+.offer-icon {
+    background: #111827 !important;
+    color: #FFFFFF !important;
+}
+
+.offer-card h3 {
+    color: #111827 !important;
+}
+
+.offer-card button {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.offer-card button:hover {
+    background: #F87171 !important;
+}
+
+
+/* =========================================================
+   WHY CHOOSE US
+========================================================= */
+
+.why-us {
+    background: #F3F4F6 !important;
+    border-top: 1px solid #E5E7EB;
+    border-bottom: 1px solid #E5E7EB;
+}
+
+.why-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+
+    box-shadow:
+        0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+.why-card svg {
+    color: #EF4444 !important;
+}
+
+.why-card h3 {
+    color: #111827 !important;
+}
+
+.why-card p {
+    color: #6B7280 !important;
+}
+
+
+/* =========================================================
+   CUSTOMER REVIEWS
+========================================================= */
+
+.reviews {
+    background: #FFF1F2 !important;
+    border-top: 1px solid #FECACA;
+    border-bottom: 1px solid #FECACA;
+}
+
+.review-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+
+    box-shadow:
+        0 8px 24px rgba(17, 24, 39, 0.08);
+}
+
+.review-card h4 {
+    color: #EF4444 !important;
+}
+
+.stars {
+    color: #EF4444 !important;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading h2 {
+    color: #111827 !important;
+}
+
+.section-heading p {
+    color: #6B7280 !important;
+}
+
+
+/* =========================================================
+   FOOD CARD PRICES / BUTTONS
+========================================================= */
+
+.best-sellers .food-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+
+    box-shadow:
+        0 8px 24px rgba(17, 24, 39, 0.10);
+}
+
+.best-sellers .food-card .price {
+    color: #111827 !important;
+}
+
+.best-sellers .food-card .add-btn {
+    background: #111827 !important;
+    color: #FFFFFF !important;
+}
+
+.best-sellers .food-card .add-btn:hover {
+    background: #374151 !important;
+}
+
+
+/* =========================================================
+   CLEAR SECTION CONTAINERS
+========================================================= */
+
+.best-sellers .food-card,
+.offers .offer-card,
+.reviews .review-card {
+    background: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+    background: #111827 !important;
+    border-top: 4px solid #EF4444 !important;
+}
+
+.footer-box h2 {
+    color: #EF4444 !important;
+}
+
+.social-icons svg {
+    color: #EF4444 !important;
+}
+
+.social-icons svg:hover {
+    color: #FFFFFF !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .best-sellers {
+        background: #F3F4F6 !important;
+    }
+
+    .offers {
+        background: #FFF1F2 !important;
+    }
+
+    .why-us {
+        background: #F3F4F6 !important;
+    }
+
+    .reviews {
+        background: #FFF1F2 !important;
+    }
+
+    .why-card,
+    .review-card {
+        background: #FFFFFF !important;
+    }
 }

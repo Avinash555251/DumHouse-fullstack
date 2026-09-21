@@ -608,3 +608,688 @@
         box-shadow: none;
     }
 }
+/* =========================================================
+   DUM HOUSE ORDER SUCCESS
+   MIDNIGHT BLUE + WHITE + RED
+   FINAL THEME
+========================================================= */
+
+/* PAGE */
+
+.success-page {
+    background: #F3F4F6 !important;
+}
+
+
+/* =========================================================
+   SUCCESS CARD
+========================================================= */
+
+.success-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    box-shadow:
+        0 12px 35px rgba(17, 24, 39, 0.14) !important;
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+========================================================= */
+
+.success-icon {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    box-shadow:
+        0 8px 22px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.success-card h1 {
+    color: #111827 !important;
+}
+
+.success-message {
+    color: #6B7280 !important;
+}
+
+
+/* =========================================================
+   ORDER ID
+========================================================= */
+
+.order-id {
+    background: #FFF1F2 !important;
+    border: 1px solid #FECACA !important;
+}
+
+.order-id span {
+    color: #6B7280 !important;
+}
+
+.order-id strong {
+    color: #EF4444 !important;
+}
+
+
+/* =========================================================
+   SUCCESS DETAILS
+========================================================= */
+
+.success-details div {
+    background: #F3F4F6 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+.success-details span {
+    color: #6B7280 !important;
+}
+
+.success-details strong {
+    color: #111827 !important;
+}
+
+
+/* =========================================================
+   DELIVERY ADDRESS
+========================================================= */
+
+.delivery-box {
+    background: #F3F4F6 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+.delivery-box h3 {
+    color: #111827 !important;
+}
+
+.delivery-box p {
+    color: #6B7280 !important;
+}
+
+.delivery-box p strong {
+    color: #374151 !important;
+}
+
+
+/* =========================================================
+   VIEW ORDERS
+========================================================= */
+
+.view-orders-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border: none !important;
+}
+
+.view-orders-btn:hover {
+    background: #F87171 !important;
+    box-shadow:
+        0 8px 20px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* =========================================================
+   CONTINUE SHOPPING
+========================================================= */
+
+.continue-shopping {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+.continue-shopping:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+
+
+/* =========================================================
+   HOME BUTTON
+========================================================= */
+
+.home-btn {
+    background: #FFFFFF !important;
+    color: #374151 !important;
+    border: 1px solid #E5E7EB !important;
+}
+
+.home-btn:hover {
+    background: #F3F4F6 !important;
+    border-color: #D1D5DB !important;
+    color: #111827 !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .success-card {
+        background: #FFFFFF !important;
+        border-color: #E5E7EB !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .success-card {
+        border-radius: 17px !important;
+    }
+
+}
+/* =========================================================
+   ORDER SUCCESS - OPTION 4 PREMIUM
+   MIDNIGHT BLUE + WHITE + RED
+========================================================= */
+
+/* PAGE */
+
+.success-page {
+    min-height: 100vh !important;
+    padding: 110px 20px 60px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #F3F4F6 !important;
+}
+
+
+/* =========================================================
+   MAIN CARD
+========================================================= */
+
+.success-card {
+    width: 100% !important;
+    max-width: 620px !important;
+
+    padding: 38px !important;
+
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 20px !important;
+
+    box-shadow:
+        0 12px 35px rgba(17, 24, 39, 0.14) !important;
+
+    text-align: center !important;
+}
+
+
+/* =========================================================
+   SUCCESS ICON
+========================================================= */
+
+.success-icon {
+    width: 68px !important;
+    height: 68px !important;
+
+    margin: 0 auto 18px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+
+    border-radius: 50% !important;
+
+    font-size: 36px !important;
+    font-weight: 700 !important;
+
+    box-shadow:
+        0 8px 22px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.success-card h1 {
+    margin: 0 0 10px !important;
+
+    color: #111827 !important;
+
+    font-size: 32px !important;
+    font-weight: 800 !important;
+    line-height: 1.2 !important;
+}
+
+.success-message {
+    max-width: 480px !important;
+
+    margin: 0 auto 25px !important;
+
+    color: #6B7280 !important;
+
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* =========================================================
+   ORDER ID
+========================================================= */
+
+.order-id {
+    width: 100% !important;
+
+    margin-bottom: 18px !important;
+    padding: 13px 15px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    background: #FFF1F2 !important;
+    border: 1px solid #FECACA !important;
+    border-radius: 11px !important;
+
+    box-sizing: border-box !important;
+}
+
+.order-id span {
+    color: #6B7280 !important;
+    font-size: 12px !important;
+}
+
+.order-id strong {
+    color: #EF4444 !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   TOTAL + DELIVERY
+========================================================= */
+
+.success-details {
+    width: 100% !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 12px !important;
+
+    margin-bottom: 18px !important;
+}
+
+.success-details div {
+    min-width: 0 !important;
+
+    padding: 16px 12px !important;
+
+    background: #F3F4F6 !important;
+    border: 1px solid #E5E7EB !important;
+    border-radius: 12px !important;
+
+    box-sizing: border-box !important;
+}
+
+.success-details span {
+    display: block !important;
+
+    margin-bottom: 6px !important;
+
+    color: #6B7280 !important;
+
+    font-size: 11px !important;
+    font-weight: 500 !important;
+}
+
+.success-details strong {
+    color: #111827 !important;
+
+    font-size: 18px !important;
+    font-weight: 800 !important;
+}
+
+
+/* =========================================================
+   DELIVERY ADDRESS
+========================================================= */
+
+.delivery-box {
+    width: 100% !important;
+
+    margin-bottom: 18px !important;
+    padding: 17px !important;
+
+    background: #F3F4F6 !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-left: 4px solid #EF4444 !important;
+
+    border-radius: 12px !important;
+
+    text-align: left !important;
+
+    box-sizing: border-box !important;
+}
+
+.delivery-box h3 {
+    margin: 0 0 10px !important;
+
+    color: #111827 !important;
+
+    font-size: 14px !important;
+    font-weight: 800 !important;
+}
+
+.delivery-box p {
+    margin: 5px 0 !important;
+
+    color: #6B7280 !important;
+
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+
+.delivery-box p strong {
+    color: #111827 !important;
+    font-weight: 700 !important;
+}
+
+
+/* =========================================================
+   VIEW MY ORDERS - PRIMARY
+========================================================= */
+
+.view-orders-btn {
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 13px !important;
+
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+
+    border: none !important;
+    border-radius: 11px !important;
+
+    font-size: 14px !important;
+    font-weight: 800 !important;
+
+    cursor: pointer !important;
+
+    transition: all 0.25s ease !important;
+}
+
+.view-orders-btn:hover {
+    background: #F87171 !important;
+
+    transform: translateY(-1px) !important;
+
+    box-shadow:
+        0 8px 20px rgba(239, 68, 68, 0.25) !important;
+}
+
+
+/* =========================================================
+   CONTINUE SHOPPING
+========================================================= */
+
+.continue-shopping {
+    width: 100% !important;
+
+    margin-top: 10px !important;
+    padding: 12px !important;
+
+    background: #FFFFFF !important;
+    color: #111827 !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-radius: 11px !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+
+    cursor: pointer !important;
+
+    transition: all 0.25s ease !important;
+}
+
+.continue-shopping:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+
+
+/* =========================================================
+   BACK TO HOME
+========================================================= */
+
+.home-btn {
+    width: 100% !important;
+
+    margin-top: 8px !important;
+    padding: 11px !important;
+
+    background: #FFFFFF !important;
+    color: #6B7280 !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-radius: 11px !important;
+
+    font-size: 12px !important;
+    font-weight: 600 !important;
+
+    cursor: pointer !important;
+
+    transition: all 0.25s ease !important;
+}
+
+.home-btn:hover {
+    background: #F3F4F6 !important;
+    color: #111827 !important;
+    border-color: #D1D5DB !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .success-page {
+        padding: 95px 14px 45px !important;
+        align-items: flex-start !important;
+    }
+
+    .success-card {
+        max-width: 100% !important;
+        padding: 28px 16px !important;
+        border-radius: 18px !important;
+    }
+
+    .success-icon {
+        width: 62px !important;
+        height: 62px !important;
+
+        margin-bottom: 16px !important;
+
+        font-size: 33px !important;
+    }
+
+    .success-card h1 {
+        font-size: 27px !important;
+    }
+
+    .success-message {
+        font-size: 12px !important;
+        margin-bottom: 22px !important;
+    }
+
+    .success-details {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 10px !important;
+    }
+
+    .success-details div {
+        padding: 14px 8px !important;
+    }
+
+    .success-details span {
+        font-size: 10px !important;
+    }
+
+    .success-details strong {
+        font-size: 16px !important;
+    }
+
+    .delivery-box {
+        padding: 15px !important;
+    }
+
+    .delivery-box h3 {
+        font-size: 14px !important;
+    }
+
+    .delivery-box p {
+        font-size: 12px !important;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .success-card {
+        padding: 25px 13px !important;
+    }
+
+    .success-card h1 {
+        font-size: 25px !important;
+    }
+
+    .success-details div {
+        padding: 13px 6px !important;
+    }
+
+    .success-details strong {
+        font-size: 15px !important;
+    }
+}
+/* =========================================================
+   DELIVERY ADDRESS - PREMIUM
+========================================================= */
+
+.delivery-box {
+    position: relative !important;
+
+    padding: 18px 18px 17px 20px !important;
+    margin-bottom: 18px !important;
+
+    background: #FFFFFF !important;
+
+    border: 1px solid #E5E7EB !important;
+    border-left: 4px solid #EF4444 !important;
+
+    border-radius: 13px !important;
+
+    box-shadow:
+        0 5px 16px rgba(17, 24, 39, 0.06) !important;
+
+    text-align: left !important;
+}
+
+
+/* Heading */
+
+.delivery-box h3 {
+    margin: 0 0 13px !important;
+
+    color: #111827 !important;
+
+    font-size: 15px !important;
+    font-weight: 800 !important;
+}
+
+
+/* Customer name */
+
+.delivery-box p:first-of-type {
+    margin-top: 0 !important;
+}
+
+.delivery-box p {
+    margin: 6px 0 !important;
+
+    color: #6B7280 !important;
+
+    font-size: 12px !important;
+    font-weight: 500 !important;
+
+    line-height: 1.5 !important;
+}
+
+.delivery-box p strong {
+    color: #111827 !important;
+
+    font-size: 13px !important;
+    font-weight: 700 !important;
+}
+
+
+/* Phone */
+
+.delivery-box p:nth-of-type(2) {
+    color: #374151 !important;
+}
+
+
+/* Address */
+
+.delivery-box p:nth-of-type(3),
+.delivery-box p:nth-of-type(4) {
+    color: #6B7280 !important;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .delivery-box {
+        padding: 16px 15px 15px 18px !important;
+        border-radius: 12px !important;
+    }
+
+    .delivery-box h3 {
+        font-size: 14px !important;
+        margin-bottom: 11px !important;
+    }
+
+    .delivery-box p {
+        font-size: 12px !important;
+        margin: 5px 0 !important;
+    }
+
+    .delivery-box p strong {
+        font-size: 13px !important;
+    }
+}

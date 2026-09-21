@@ -1,5 +1,13 @@
 import "./Profile.css";
 import { useNavigate } from "react-router-dom";
+import {
+  UserRound,
+  ClipboardList,
+  IndianRupee,
+  Package,
+  Utensils,
+  ChevronRight,
+} from "lucide-react";
 
 function Profile({ orders, customer, onLogout }) {
 
@@ -9,11 +17,15 @@ function Profile({ orders, customer, onLogout }) {
   const totalOrders = orders.length;
 
 
-  const totalSpent = orders.reduce(
-  (sum, order) =>
-    sum + Number(order.total || 0),
-  0
-);
+  const totalSpent = orders
+  .filter(
+    (order) => order.status === "Delivered"
+  )
+  .reduce(
+    (sum, order) =>
+      sum + Number(order.total || 0),
+    0
+  );
 
 
   function handleLogout() {
@@ -58,8 +70,8 @@ function Profile({ orders, customer, onLogout }) {
 
 
           <div className="profile-avatar">
-            👤
-          </div>
+  <UserRound />
+</div>
 
 
           <div className="profile-info">
@@ -90,8 +102,8 @@ function Profile({ orders, customer, onLogout }) {
           <div className="stat-card">
 
             <span>
-              🧾
-            </span>
+  <ClipboardList />
+</span>
 
             <strong>
               {totalOrders}
@@ -108,8 +120,8 @@ function Profile({ orders, customer, onLogout }) {
           <div className="stat-card">
 
             <span>
-              💰
-            </span>
+  <IndianRupee />
+</span>
 
             <strong>
               ₹{totalSpent}
@@ -142,8 +154,8 @@ function Profile({ orders, customer, onLogout }) {
           >
 
             <span>
-              📦
-            </span>
+  <Package />
+</span>
 
 
             <div>
@@ -160,8 +172,8 @@ function Profile({ orders, customer, onLogout }) {
 
 
             <span>
-              →
-            </span>
+  <ChevronRight />
+</span>
 
           </button>
 
@@ -176,8 +188,8 @@ function Profile({ orders, customer, onLogout }) {
           >
 
             <span>
-              🍽️
-            </span>
+  <Utensils />
+</span>
 
 
             <div>
@@ -194,8 +206,8 @@ function Profile({ orders, customer, onLogout }) {
 
 
             <span>
-              →
-            </span>
+  <ChevronRight />
+</span>
 
           </button>
 

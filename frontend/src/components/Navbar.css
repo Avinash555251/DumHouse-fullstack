@@ -805,3 +805,374 @@
         box-shadow: none;
     }
 }
+/* =========================================================
+   FINAL NAVBAR GAP FIX
+========================================================= */
+
+/* Home ↔ Menu */
+.nav-links {
+    gap: 45px !important;
+}
+
+/* Cart ↔ Profile */
+.nav-right {
+    gap: 14px !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        gap: 24px !important;
+    }
+
+    .nav-right {
+        gap: 8px !important;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+    .nav-links {
+        gap: 16px !important;
+    }
+
+    .nav-right {
+        gap: 8px !important;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+    .nav-links {
+        gap: 10px !important;
+    }
+
+    .nav-right {
+        gap: 6px !important;
+    }
+}
+
+
+/* =========================
+   VERY NARROW
+========================= */
+
+@media (max-width: 340px) {
+
+    .nav-links {
+        gap: 8px !important;
+    }
+
+    .nav-right {
+        gap: 5px !important;
+    }
+}
+/* =========================================================
+   DUM HOUSE - NEW PREMIUM COLOR THEME
+   Deep Green + Gold + Cream
+========================================================= */
+
+/* Navbar */
+.navbar {
+    background: #013934;
+    box-shadow:
+        0 4px 18px rgba(24, 58, 55, 0.22);
+}
+
+/* Logo */
+.logo-content h2 {
+    color: #E8A317;
+}
+
+.logo-content span {
+    color: #B8C7C3;
+}
+
+/* Home + Menu */
+.nav-link {
+    color: #ffffff;
+}
+
+.nav-link::after {
+    background: #E8A317;
+}
+
+.nav-link:hover {
+    color: #E8A317;
+}
+
+.nav-link:hover svg {
+    color: #E8A317;
+}
+
+/* Cart */
+.cart-btn {
+    background: #E8A317;
+    color: #183A37;
+}
+
+.cart-btn:hover {
+    background: #F0B52A;
+
+    box-shadow:
+        0 5px 15px rgba(232, 163, 23, 0.28);
+}
+
+/* Cart count */
+.cart-count {
+    background: #D94F4F;
+    border-color: #183A37;
+}
+
+/* Profile */
+.profile-btn {
+    background: #2F5D50;
+    color: #ffffff;
+}
+
+.profile-btn:hover {
+    background: #3B6F60;
+
+    box-shadow:
+        0 5px 15px rgba(47, 93, 80, 0.28);
+}
+
+/* Login */
+.login-btn {
+    background: #E8A317;
+    color: #183A37;
+}
+
+.login-btn:hover {
+    background: #F0B52A;
+
+    box-shadow:
+        0 5px 15px rgba(232, 163, 23, 0.28);
+}
+
+/* Logout */
+.logout-btn {
+    color: #ffffff;
+}
+
+.logout-btn:hover {
+    background: #244B46;
+    color: #E8A317;
+}
+/* =========================================================
+   NAVBAR THEME - OPTION 6
+   MIDNIGHT BLUE + CORAL + WHITE
+========================================================= */
+
+.navbar {
+    background: #111827 !important;
+    box-shadow:
+        0 4px 18px rgba(17, 24, 39, 0.32);
+}
+
+/* Logo */
+.logo-content h2 {
+    color: #FF6B6B !important;
+}
+
+.logo-content span {
+    color: #9CA3AF !important;
+}
+
+/* Home + Menu */
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-link::after {
+    background: #FF6B6B !important;
+}
+
+.nav-link:hover {
+    color: #FF6B6B !important;
+}
+
+.nav-link:hover svg {
+    color: #FF6B6B !important;
+}
+
+/* Cart */
+.cart-btn {
+    background: #FF6B6B !important;
+    color: #FFFFFF !important;
+}
+
+.cart-btn:hover {
+    background: #FF8585 !important;
+}
+
+/* Cart Count */
+.cart-count {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border-color: #111827 !important;
+}
+
+/* Profile */
+.profile-btn {
+    background: #374151 !important;
+    color: #FFFFFF !important;
+}
+
+.profile-btn:hover {
+    background: #FF6B6B !important;
+}
+
+/* Login */
+.login-btn {
+    background: #FF6B6B !important;
+    color: #FFFFFF !important;
+}
+
+.login-btn:hover {
+    background: #FF8585 !important;
+}
+
+/* Logout */
+.logout-btn {
+    color: #FFFFFF !important;
+}
+
+.logout-btn:hover {
+    background: #1F2937 !important;
+    color: #FF6B6B !important;
+}
+/* =========================================================
+   NAVBAR - MIDNIGHT BLUE + WHITE + RED
+========================================================= */
+
+.navbar {
+    background: #111827 !important;
+    box-shadow:
+        0 4px 18px rgba(17, 24, 39, 0.32);
+}
+
+/* Logo */
+.logo-content h2 {
+    color: #EF4444 !important;
+}
+
+.logo-content span {
+    color: #9CA3AF !important;
+}
+
+/* Home + Menu */
+.nav-link {
+    color: #FFFFFF !important;
+}
+
+.nav-link::after {
+    background: #EF4444 !important;
+}
+
+.nav-link:hover,
+.nav-link:hover svg {
+    color: #EF4444 !important;
+}
+
+/* Cart */
+.cart-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.cart-btn:hover {
+    background: #F87171 !important;
+}
+
+/* Cart Count */
+.cart-count {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+    border-color: #111827 !important;
+}
+
+/* Profile */
+.profile-btn {
+    background: #374151 !important;
+    color: #FFFFFF !important;
+}
+
+.profile-btn:hover {
+    background: #EF4444 !important;
+}
+
+/* Login */
+.login-btn {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+.login-btn:hover {
+    background: #F87171 !important;
+}
+
+/* Logout */
+.logout-btn {
+    color: #FFFFFF !important;
+}
+
+.logout-btn:hover {
+    background: #1F2937 !important;
+    color: #EF4444 !important;
+}
+
+
+.cart-count {
+    min-width: 24px !important;
+    height: 24px !important;
+    padding: 0 6px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    line-height: 1 !important;
+
+    border-radius: 50% !important;
+}
+.nav-link svg,
+.cart-btn svg,
+.profile-btn svg {
+    width: 25px !important;
+    height: 25px !important;
+}
+.cart-count {
+    width: 20px !important;
+    height: 20px !important;
+    min-width: 20px !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    font-size: 12px !important;
+    font-weight: 900 !important;
+    line-height: 1 !important;
+top: -9px !important;
+    border-radius: 50% !important;
+    font: bold;
+}

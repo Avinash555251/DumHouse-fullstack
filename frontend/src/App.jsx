@@ -1,7 +1,7 @@
 import {
   BrowserRouter,
   Routes,
-  Route,
+  Route
 } from "react-router-dom";
 
 import {
@@ -26,6 +26,7 @@ import OrderSuccess from "./pages/OrderSuccess";
 import Orders from "./pages/Orders";
 import Profile from "./pages/Profile";
 import Admin from "./pages/Admin";
+import AdminLogin from "./pages/AdminLogin";
 
 function App() {
 
@@ -342,70 +343,7 @@ function App() {
    AUTO REFRESH CUSTOMER ORDER STATUSES
 ===================================================== */
 
-useEffect(() => {
-  if (!customer?.phone) {
-    return;
-  }
 
-  const refreshOrderStatuses = async () => {
-    try {
-      const token = localStorage.getItem("dumHouseToken");
-
-const response = await fetch(
-  `/api/orders/customer/${customer.phone}`,
-  {
-    headers: {
-      Authorization: `Bearer ${token}`,
-    },
-  }
-); 
-
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        return;
-      }
-
-      setOrders((previousOrders) => {
-        return previousOrders.map((oldOrder) => {
-
-          const latestOrder = data.orders.find(
-            (newOrder) =>
-              String(newOrder._id) ===
-              String(oldOrder._id)
-          );
-
-          if (!latestOrder) {
-            return oldOrder;
-          }
-
-          return {
-            ...oldOrder,
-            status: latestOrder.status,
-          };
-        });
-      });
-
-    } catch (error) {
-      console.error(
-        "Customer Order Status Refresh Error:",
-        error
-      );
-    }
-  };
-
-  refreshOrderStatuses();
-
-  const interval = setInterval(
-    refreshOrderStatuses,
-    10000
-  );
-
-  return () => {
-    clearInterval(interval);
-  };
-
-}, [customer?.phone]);
 
 /* =====================================================
    LOAD ORDERS FROM MONGODB
@@ -417,8 +355,7 @@ useEffect(() => {
 if (!customer?.phone) return;
     try {
 
-      const token = localStorage.getItem("dumHouseToken");
-
+const token = localStorage.getItem("dumHouseToken");
 const response = await fetch(
   `/api/orders/customer/${customer.phone}`,
   {
@@ -527,6 +464,31 @@ const data = await response.json();
 
   }
 
+  function AdminProtectedRoute({ children }) {
+const token = localStorage.getItem("dumHouseAdminToken");
+  const admin = localStorage.getItem("dumHouseAdmin");
+
+  if (!token || !admin) {
+    window.location.href = "/admin-login";
+    return null;
+  }
+
+  try {
+    const adminData = JSON.parse(admin);
+
+    if (!adminData?.email) {
+      localStorage.removeItem("dumHouseAdmin");
+      window.location.href = "/admin-login";
+      return null;
+    }
+  } catch {
+    localStorage.removeItem("dumHouseAdmin");
+    window.location.href = "/admin-login";
+    return null;
+  }
+
+  return children;
+}
 
   return (
 
@@ -584,6 +546,7 @@ const data = await response.json();
         </div>
 
       )}
+
 
 
       {/* =================================================
@@ -648,9 +611,15 @@ const data = await response.json();
           }
         />
 
+<Route path="/admin-login" element={<AdminLogin />} />
+
 <Route
   path="/admin"
-  element={<Admin />}
+  element={
+    <AdminProtectedRoute>
+      <Admin />
+    </AdminProtectedRoute>
+  }
 />
         {/* =================================================
             LOGIN

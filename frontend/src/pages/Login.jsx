@@ -1351,6 +1351,18 @@ msg91ReqId.current
 
         setLoading(true);
 
+const reqId = msg91ReqId.current;
+
+if (!reqId) {
+    setLoading(false);
+
+    alert(
+        "OTP session expired. Please go back and request a new OTP."
+    );
+
+    return;
+}
+
 window.retryOtp(
 
     "11",
@@ -1386,8 +1398,8 @@ window.retryOtp(
 
     },
 
-    msg91ReqId.current
-  
+    reqId
+
 );
 
           
@@ -1409,15 +1421,19 @@ window.retryOtp(
 
                     <div className="login-heading">
 
-                        <h1>
-                            Welcome to Dum House
-                        </h1>
+    <div className="login-logo">
+        DH
+    </div>
 
-                        <p>
-                            Create your account
-                        </p>
+    <h1>
+        Welcome to Dum House
+    </h1>
 
-                    </div>
+    <p>
+        Create your account
+    </p>
+
+</div>
 
 
                     <form
@@ -1533,19 +1549,23 @@ window.retryOtp(
 
                     <div className="login-heading">
 
-                        <h1>
-                            Verify Mobile Number
-                        </h1>
+    <div className="login-logo">
+        DH
+    </div>
 
-                        <p>
-                            Enter the OTP sent to
-                        </p>
+    <h1>
+        Verify Mobile Number
+    </h1>
 
-                        <strong>
-                            +91 {phone}
-                        </strong>
+    <p>
+        Enter the OTP sent to
+    </p>
 
-                    </div>
+    <strong>
+        +91 {phone}
+    </strong>
+
+</div>
 
 
                     <form
@@ -1643,18 +1663,21 @@ window.retryOtp(
 
                 <div className="login-container">
 
-                    <div className="login-heading">
+                   <div className="login-heading">
 
-                        <h1>
-                            Welcome Back
-                        </h1>
+    <div className="login-logo">
+        DH
+    </div>
 
-                        <p>
-                            Login with your registered
-                            mobile number
-                        </p>
+    <h1>
+        Welcome Back
+    </h1>
 
-                    </div>
+    <p>
+        Login to your Dum House account
+    </p>
+
+</div>
 
 
                     <form
@@ -1751,19 +1774,23 @@ window.retryOtp(
 
                 <div className="login-heading">
 
-                    <h1>
-                        Verify Mobile Number
-                    </h1>
+    <div className="login-logo">
+        DH
+    </div>
 
-                    <p>
-                        Enter the OTP sent to
-                    </p>
+    <h1>
+        Verify Mobile Number
+    </h1>
 
-                    <strong>
-                        +91 {phone}
-                    </strong>
+    <p>
+        Enter the OTP sent to
+    </p>
 
-                </div>
+    <strong>
+        +91 {phone}
+    </strong>
+
+</div>
 
 
                 <form

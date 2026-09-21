@@ -946,3 +946,489 @@
         min-height: 600px !important;
     }
 }
+/* =========================================================
+   DUM HOUSE MENU - PREMIUM GREEN + GOLD THEME
+========================================================= */
+
+/* Page */
+.menu-page {
+    background: #F5F8F6;
+}
+
+/* Title */
+.menu-title {
+    color: #183A37;
+}
+
+/* Search */
+.search-input:focus {
+    border-color: #2F5D50;
+
+    box-shadow:
+        0 5px 20px rgba(47, 93, 80, 0.16);
+}
+
+/* Category buttons */
+.category-btn:hover {
+    border-color: #2F5D50;
+    color: #2F5D50;
+}
+
+.category-btn.active {
+    background: #183A37;
+    border-color: #183A37;
+    color: #ffffff;
+
+    box-shadow:
+        0 5px 15px rgba(24, 58, 55, 0.20);
+}
+
+.category-btn.active:hover {
+    background: #2F5D50;
+    border-color: #2F5D50;
+}
+
+/* Food cards */
+.menu-card {
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(24, 58, 55, 0.10);
+}
+
+.menu-card:hover {
+    box-shadow:
+        0 12px 32px rgba(24, 58, 55, 0.15);
+}
+
+/* Price */
+.price {
+    color: #183A37;
+}
+
+/* Rating */
+.rating {
+    color: #555555;
+}
+
+/* Quantity buttons */
+.menu-card .quantity-control button,
+.menu-card .quantity button,
+.menu-card .qty-control button {
+    border-color: #2F5D50;
+    color: #2F5D50;
+}
+
+.menu-card .quantity-control button:hover,
+.menu-card .quantity button:hover,
+.menu-card .qty-control button:hover {
+    background: #EEF5F1;
+}
+
+/* Quantity number */
+.menu-card .quantity-control span,
+.menu-card .quantity span,
+.menu-card .qty-control span {
+    color: #183A37;
+}
+
+/* Add to Cart */
+.add-btn {
+    background: #183A37;
+    color: #ffffff;
+}
+
+.add-btn:hover {
+    background: #2F5D50;
+}
+
+/* No items */
+.no-items {
+    border: 1px solid #D5E4DE;
+
+    box-shadow:
+        0 8px 25px rgba(24, 58, 55, 0.08);
+}
+
+.no-items h3 {
+    color: #183A37;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .menu-page {
+        background: #F5F8F6;
+    }
+
+    .category-btn.active {
+        background: #183A37;
+        border-color: #183A37;
+    }
+
+    .add-btn {
+        background: #183A37;
+    }
+
+    .add-btn:hover {
+        background: #2F5D50;
+    }
+}
+/* =========================================================
+   MENU PAGE - FORCE GREEN THEME
+========================================================= */
+
+.menu-page .price {
+    color: #183A37 !important;
+}
+
+.menu-page .add-btn {
+    background: #183A37 !important;
+    color: #ffffff !important;
+}
+
+.menu-page .add-btn:hover {
+    background: #2F5D50 !important;
+}
+
+.menu-page .category-btn.active {
+    background: #183A37 !important;
+    border-color: #183A37 !important;
+    color: #ffffff !important;
+}
+
+.menu-page .category-btn:hover {
+    border-color: #2F5D50 !important;
+    color: #2F5D50 !important;
+}
+
+.menu-page .menu-card .quantity-control button,
+.menu-page .menu-card .quantity button,
+.menu-page .menu-card .qty-control button {
+    border-color: #2F5D50 !important;
+    color: #2F5D50 !important;
+}
+
+.menu-page .menu-card .quantity-control button:hover,
+.menu-page .menu-card .quantity button:hover,
+.menu-page .menu-card .qty-control button:hover {
+    background: #EEF5F1 !important;
+}
+/* =========================================================
+   DUM HOUSE - MENU PAGE
+   MIDNIGHT BLUE + WHITE + RED
+========================================================= */
+
+/* Page */
+.menu-page {
+    background: #F3F4F6 !important;
+}
+
+/* Title */
+.menu-title {
+    color: #111827 !important;
+}
+
+/* Search */
+.search-input:focus {
+    border-color: #EF4444 !important;
+    box-shadow:
+        0 5px 20px rgba(239, 68, 68, 0.16) !important;
+}
+
+/* Categories */
+.category-btn:hover {
+    border-color: #EF4444 !important;
+    color: #EF4444 !important;
+}
+
+.category-btn.active {
+    background: #111827 !important;
+    border-color: #111827 !important;
+    color: #FFFFFF !important;
+
+    box-shadow:
+        0 5px 15px rgba(17, 24, 39, 0.20);
+}
+
+.category-btn.active:hover {
+    background: #374151 !important;
+    border-color: #374151 !important;
+}
+
+/* Food Cards */
+.menu-card,
+.food-card {
+    background: #FFFFFF !important;
+    border: 1px solid #E5E7EB !important;
+
+    box-shadow:
+        0 8px 25px rgba(17, 24, 39, 0.10) !important;
+}
+
+.menu-card:hover,
+.food-card:hover {
+    box-shadow:
+        0 12px 32px rgba(17, 24, 39, 0.15) !important;
+}
+
+/* Price */
+.menu-page .price {
+    color: #111827 !important;
+}
+
+/* Rating */
+.menu-page .rating {
+    color: #6B7280 !important;
+}
+
+/* Quantity buttons */
+.menu-page .quantity-control button,
+.menu-page .quantity button,
+.menu-page .qty-control button {
+    border-color: #EF4444 !important;
+    color: #EF4444 !important;
+}
+
+.menu-page .quantity-control button:hover,
+.menu-page .quantity button:hover,
+.menu-page .qty-control button:hover {
+    background: #FFF1F2 !important;
+}
+
+/* Quantity number */
+.menu-page .quantity-control span,
+.menu-page .quantity span,
+.menu-page .qty-control span {
+    color: #111827 !important;
+}
+
+/* Add to Cart */
+.menu-page .add-btn,
+.menu-page .food-add-btn {
+    background: #111827 !important;
+    color: #FFFFFF !important;
+}
+
+.menu-page .add-btn:hover,
+.menu-page .food-add-btn:hover {
+    background: #374151 !important;
+}
+
+/* Bestseller */
+.menu-page .best-badge {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+}
+
+/* Wishlist */
+.menu-page .wishlist-icon {
+    color: #EF4444 !important;
+}
+
+.menu-page .wishlist-icon:hover,
+.menu-page .wishlist-icon.liked {
+    color: #EF4444 !important;
+}
+.menu-page .category-btn.active {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+}
+
+.menu-page .category-btn:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+/* =========================================================
+   FINAL MENU FILTER FIX
+========================================================= */
+
+/* Normal filter */
+.menu-page .category-btn {
+    background: #FFFFFF !important;
+    color: #374151 !important;
+    border: 1px solid #D1D5DB !important;
+    box-shadow: none !important;
+}
+
+/* Hover */
+.menu-page .category-btn:hover {
+    background: #FFF1F2 !important;
+    color: #EF4444 !important;
+    border-color: #EF4444 !important;
+}
+
+/* SELECTED FILTER */
+.menu-page .category-btn.active,
+.menu-page .category-btn.active:hover,
+.menu-page .category-btn.active:focus,
+.menu-page .category-btn.active:focus-visible {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 5px 15px rgba(239, 68, 68, 0.25) !important;
+
+    outline: none !important;
+}
+
+/* Clicked filter */
+.menu-page .category-btn:active {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+}
+/* =========================================================
+   MENU SEARCH BAR - FINAL THEME
+   MIDNIGHT BLUE + WHITE + RED
+========================================================= */
+
+.menu-page .search-input {
+    background: #FFFFFF !important;
+    color: #111827 !important;
+
+    border: 1px solid #D1D5DB !important;
+
+    box-shadow:
+        0 4px 14px rgba(17, 24, 39, 0.06) !important;
+}
+
+.menu-page .search-input::placeholder {
+    color: #9CA3AF !important;
+}
+
+/* Search bar focus */
+.menu-page .search-input:focus {
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.12),
+        0 6px 18px rgba(17, 24, 39, 0.08) !important;
+
+    outline: none !important;
+}
+
+/* Search icon */
+.menu-page .search-icon {
+    color: #111827 !important;
+}
+
+/* Search icon when focused */
+.menu-page .search-container:focus-within .search-icon {
+    color: #EF4444 !important;
+}
+/* =========================================================
+   FINAL SEARCH BAR FIX
+========================================================= */
+
+.menu-page .search-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+/* Search input */
+.menu-page .search-input {
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 12px 48px 12px 15px;
+
+    background: #FFFFFF !important;
+    color: #111827 !important;
+
+    border: 1px solid #D1D5DB !important;
+    border-radius: 22px;
+
+    outline: none;
+
+    font-size: 14px;
+
+    box-shadow:
+        0 4px 12px rgba(17, 24, 39, 0.06);
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+/* Placeholder */
+.menu-page .search-input::placeholder {
+    color: #9CA3AF !important;
+}
+
+/* Focus */
+.menu-page .search-input:focus {
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(239, 68, 68, 0.10) !important;
+}
+
+/* Search icon INSIDE bar */
+.menu-page .search-icon {
+    position: absolute;
+
+    right: 16px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 16px;
+    height: 16px;
+
+    color: #111827;
+
+    pointer-events: none;
+}
+
+/* Filters gap */
+.menu-page .category-filters {
+    margin-top: 14px;
+}
+/* =========================================================
+   FINAL FILTER COLORS
+   BLUE + WHITE + RED
+========================================================= */
+
+/* NORMAL */
+.menu-page .category-btn {
+    background: #111827 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #111827 !important;
+    box-shadow: none !important;
+}
+
+/* HOVER */
+.menu-page .category-btn:hover {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+}
+
+/* SELECTED */
+.menu-page .category-btn.active,
+.menu-page .category-btn.active:hover,
+.menu-page .category-btn.active:focus,
+.menu-page .category-btn.active:focus-visible {
+    background: #EF4444 !important;
+    color: #FFFFFF !important;
+    border-color: #EF4444 !important;
+
+    box-shadow:
+        0 5px 15px rgba(239, 68, 68, 0.25) !important;
+
+    outline: none !important;
+}
+/* MENU PAGE - LIGHT RED BACKGROUND */
+
+.menu-page {
+    background: #FFF1F2 !important;
+}
